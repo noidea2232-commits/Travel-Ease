@@ -38,7 +38,7 @@ const phases: Phase[] = [
         heroImg: "https://images.unsplash.com/photo-1570168007204-dfb528c6958f?w=900&q=90",
         images: [
           "https://images.unsplash.com/photo-1570168007204-dfb528c6958f?w=600&q=80",
-          "https://images.unsplash.com/photo-1595069906974-f8ae7aeaa7b1?w=600&q=80",
+          "https://images.unsplash.com/photo-1548013146-72479768bada?w=600&q=80",
           "https://images.unsplash.com/photo-1567157577867-05ccb1388e66?w=600&q=80",
         ],
         desc: "The City of Palaces — home to the magnificent Mysore Palace illuminated by 100,000 bulbs every Sunday. Chamundi Hill, Brindavan Gardens, and the fragrant Devaraja Market make Mysuru an unforgettable royal experience.",
@@ -49,10 +49,10 @@ const phases: Phase[] = [
       {
         name: "Srirangapatna",
         dist: "130 km from Bengaluru",
-        heroImg: "https://images.unsplash.com/photo-1582560475093-ba66accbc095?w=900&q=90",
+        heroImg: "https://images.unsplash.com/photo-1544531585-9847b68c8c86?w=900&q=90",
         images: [
-          "https://images.unsplash.com/photo-1582560475093-ba66accbc095?w=600&q=80",
           "https://images.unsplash.com/photo-1544531585-9847b68c8c86?w=600&q=80",
+          "https://images.unsplash.com/photo-1570168007204-dfb528c6958f?w=600&q=80",
         ],
         desc: "The historic island fortress town of Tipu Sultan — walk through centuries of Deccan history at the fort, dungeons, mosque, and the serene Kaveri riverbanks.",
         highlights: ["Tipu Sultan's Fort", "Gumbaz Mausoleum", "Daria Daulat Palace", "Ranganathaswamy Temple", "Kaveri River Rafting"],
@@ -65,7 +65,7 @@ const phases: Phase[] = [
         heroImg: "https://images.unsplash.com/photo-1548013146-72479768bada?w=900&q=90",
         images: [
           "https://images.unsplash.com/photo-1548013146-72479768bada?w=600&q=80",
-          "https://images.unsplash.com/photo-1582560475093-ba66accbc095?w=600&q=80",
+          "https://images.unsplash.com/photo-1544531585-9847b68c8c86?w=600&q=80",
         ],
         desc: "The ancient capital of the Hoysala Empire — marvel at intricate soapstone carvings that have survived 800 years. Often combined with Belur for a full Hoysala heritage trail.",
         highlights: ["Hoysaleswara Temple", "Belur Chennakeshava Temple", "Archaeological Museum", "Intricate stone carvings", "Hoysala architecture"],
@@ -78,15 +78,15 @@ const phases: Phase[] = [
     id: 2,
     name: "Coffee Hills & Wildlife",
     subtitle: "Coffee Estates · Misty Hills · Safari",
-    bannerImg: "https://images.unsplash.com/photo-1611273427955-bbb8a13e1a45?w=900&q=90",
+    bannerImg: "https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=900&q=90",
     accent: "#5a9a4a",
     destinations: [
       {
         name: "Chikmagalur",
         dist: "245 km from Bengaluru",
-        heroImg: "https://images.unsplash.com/photo-1611273427955-bbb8a13e1a45?w=900&q=90",
+        heroImg: "https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=900&q=90",
         images: [
-          "https://images.unsplash.com/photo-1611273427955-bbb8a13e1a45?w=600&q=80",
+          "https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=600&q=80",
           "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=600&q=80",
           "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=600&q=80",
         ],
@@ -101,7 +101,7 @@ const phases: Phase[] = [
         heroImg: "https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=900&q=90",
         images: [
           "https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=600&q=80",
-          "https://images.unsplash.com/photo-1611273427955-bbb8a13e1a45?w=600&q=80",
+          "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=600&q=80",
           "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=600&q=80",
         ],
         desc: "The Scotland of India — lush coffee and spice estates, Abbey Falls, Raja's Seat viewpoint, and the warm Kodava culture. A favourite monsoon escape with breathtaking mist-covered valleys.",
@@ -129,17 +129,17 @@ const phases: Phase[] = [
     id: 3,
     name: "Ruins & Sacred Coasts",
     subtitle: "Ancient Ruins · Beaches · Temples",
-    bannerImg: "https://images.unsplash.com/photo-1598977703858-a8e30f7c9753?w=900&q=90",
+    bannerImg: "https://images.unsplash.com/photo-1590050752117-238cb0fb12b1?w=900&q=90",
     accent: "#c97c3a",
     destinations: [
       {
         name: "Hampi",
         dist: "350 km from Bengaluru",
-        heroImg: "https://images.unsplash.com/photo-1598977703858-a8e30f7c9753?w=900&q=90",
+        heroImg: "https://images.unsplash.com/photo-1590050752117-238cb0fb12b1?w=900&q=90",
         images: [
-          "https://images.unsplash.com/photo-1598977703858-a8e30f7c9753?w=600&q=80",
           "https://images.unsplash.com/photo-1590050752117-238cb0fb12b1?w=600&q=80",
           "https://images.unsplash.com/photo-1563207153-f403bf289096?w=600&q=80",
+          "https://images.unsplash.com/photo-1448375240586-882707db888b?w=600&q=80",
         ],
         desc: "A UNESCO World Heritage Site — the ruins of the Vijayanagara Empire spread across a surreal boulder-strewn landscape. The Virupaksha Temple, Vittala Temple, and Stone Chariot are iconic landmarks.",
         highlights: ["Virupaksha Temple", "Vittala Temple & Stone Chariot", "Tungabhadra River Coracle", "Hampi Bazaar", "Elephant Stables"],
@@ -153,7 +153,7 @@ const phases: Phase[] = [
         images: [
           "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=600&q=80",
           "https://images.unsplash.com/photo-1519046904884-53103b34b206?w=600&q=80",
-          "https://images.unsplash.com/photo-1566241832378-917a0f30db2a?w=600&q=80",
+          "https://images.unsplash.com/photo-1530866495561-507c9faab2ed?w=600&q=80",
         ],
         desc: "A pristine pilgrimage town with some of Karnataka's most beautiful beaches — Om Beach, Paradise Beach, and Kudle Beach. A perfect mix of spirituality and nature.",
         highlights: ["Om Beach", "Mahabaleshwar Temple", "Paradise Beach Trek", "Kudle Beach", "Half Moon Beach"],
@@ -163,9 +163,9 @@ const phases: Phase[] = [
       {
         name: "Udupi",
         dist: "400 km from Bengaluru",
-        heroImg: "https://images.unsplash.com/photo-1566241832378-917a0f30db2a?w=900&q=90",
+        heroImg: "https://images.unsplash.com/photo-1548013146-72479768bada?w=900&q=90",
         images: [
-          "https://images.unsplash.com/photo-1566241832378-917a0f30db2a?w=600&q=80",
+          "https://images.unsplash.com/photo-1548013146-72479768bada?w=600&q=80",
           "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=600&q=80",
         ],
         desc: "Famous for its Sri Krishna Temple and authentic Udupi cuisine. Malpe Beach, St. Mary's Island, and the cultural richness of coastal Karnataka make this a delightful cultural getaway.",
@@ -188,8 +188,8 @@ const phases: Phase[] = [
         heroImg: "https://images.unsplash.com/photo-1602216056096-3b40cc0c9944?w=900&q=90",
         images: [
           "https://images.unsplash.com/photo-1602216056096-3b40cc0c9944?w=600&q=80",
-          "https://images.unsplash.com/photo-1625814587210-0cd26b3e3bba?w=600&q=80",
           "https://images.unsplash.com/photo-1588416936097-41850ab3d86d?w=600&q=80",
+          "https://images.unsplash.com/photo-1519046904884-53103b34b206?w=600&q=80",
         ],
         desc: "The Venice of the East — glide through serene Kerala backwaters on a traditional houseboat. Alleppey's canals, lagoons, and paddy fields create an unforgettable slow-travel experience.",
         highlights: ["Houseboat Stay", "Backwater Canals", "Vembanad Lake", "Kuttanad Paddy Fields", "Alappuzha Beach"],
@@ -202,8 +202,8 @@ const phases: Phase[] = [
         heroImg: "https://images.unsplash.com/photo-1605540436563-5bca919ae766?w=900&q=90",
         images: [
           "https://images.unsplash.com/photo-1605540436563-5bca919ae766?w=600&q=80",
-          "https://images.unsplash.com/photo-1558618047-3c8c76ca7d13?w=600&q=80",
           "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=600&q=80",
+          "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=600&q=80",
         ],
         desc: "A breathtaking high-altitude hill station carpeted in tea estates. The rolling green hills, cool mist, and cascading waterfalls make Munnar one of South India's most romantic destinations.",
         highlights: ["Tea Plantation Tours", "Eravikulam National Park", "Mattupetty Dam & Lake", "Top Station Viewpoint", "Attukal Waterfalls"],
@@ -240,10 +240,10 @@ const phases: Phase[] = [
       {
         name: "Wayanad",
         dist: "285 km from Bengaluru",
-        heroImg: "https://images.unsplash.com/photo-1574168898761-45e7f08f7ea2?w=900&q=90",
+        heroImg: "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=900&q=90",
         images: [
-          "https://images.unsplash.com/photo-1574168898761-45e7f08f7ea2?w=600&q=80",
           "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=600&q=80",
+          "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=600&q=80",
           "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=600&q=80",
         ],
         desc: "A lush forest district bordering Karnataka — tribal culture, ancient caves, bamboo forests, and the majestic Chembra Peak make Wayanad a hidden gem for nature lovers.",
@@ -328,9 +328,9 @@ const phases: Phase[] = [
       {
         name: "Murudeshwar",
         dist: "480 km from Bengaluru",
-        heroImg: "https://images.unsplash.com/photo-1566241832378-917a0f30db2a?w=900&q=90",
+        heroImg: "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=900&q=90",
         images: [
-          "https://images.unsplash.com/photo-1566241832378-917a0f30db2a?w=600&q=80",
+          "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=600&q=80",
           "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=600&q=80",
           "https://images.unsplash.com/photo-1519046904884-53103b34b206?w=600&q=80",
         ],
