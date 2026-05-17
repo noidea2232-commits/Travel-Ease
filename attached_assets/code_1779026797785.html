@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Poorvi Best Travels | Premium Taxi &amp; Travel Services Bengaluru</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&amp;family=Manrope:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-tertiary-container": "#0041cc",
+                        "inverse-on-surface": "#263143",
+                        "primary-container": "#e3c06f",
+                        "tertiary-container": "#b3c1ff",
+                        "on-secondary-fixed-variant": "#40465a",
+                        "primary": "#ffdc8e",
+                        "tertiary": "#d9deff",
+                        "on-primary-container": "#664d03",
+                        "on-secondary": "#2a3042",
+                        "primary-fixed": "#ffdf99",
+                        "surface-tint": "#e6c271",
+                        "surface-container-high": "#1f2a3c",
+                        "inverse-surface": "#d8e3fb",
+                        "surface": "#081425",
+                        "on-primary-fixed-variant": "#5a4300",
+                        "error": "#ffb4ab",
+                        "outline": "#99907f",
+                        "on-surface-variant": "#d0c5b3",
+                        "on-tertiary-fixed-variant": "#0039b5",
+                        "on-background": "#d8e3fb",
+                        "inverse-primary": "#755b13",
+                        "tertiary-fixed-dim": "#b7c4ff",
+                        "on-surface": "#d8e3fb",
+                        "secondary-fixed-dim": "#c0c6de",
+                        "surface-container-low": "#111c2d",
+                        "error-container": "#93000a",
+                        "on-primary-fixed": "#251a00",
+                        "tertiary-fixed": "#dce1ff",
+                        "on-secondary-fixed": "#151b2d",
+                        "background": "#081425",
+                        "surface-container-lowest": "#040e1f",
+                        "on-tertiary-fixed": "#001551",
+                        "secondary-container": "#40465a",
+                        "surface-container-highest": "#2a3548",
+                        "primary-fixed-dim": "#e6c271",
+                        "secondary-fixed": "#dce2fa",
+                        "surface-dim": "#081425",
+                        "on-error": "#690005",
+                        "on-primary": "#3f2e00",
+                        "on-tertiary": "#002682",
+                        "secondary": "#c0c6de",
+                        "surface-container": "#152031",
+                        "outline-variant": "#4d4638",
+                        "surface-bright": "#2f3a4c",
+                        "on-error-container": "#ffdad6",
+                        "on-secondary-container": "#aeb4cc",
+                        "surface-variant": "#2a3548",
+                        "obsidian": "#040e1f"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "spacing": {
+                        "margin-mobile": "16px",
+                        "gutter": "24px",
+                        "base": "8px",
+                        "container-max": "1280px",
+                        "margin-desktop": "64px",
+                        "section-padding": "120px",
+                        "section-gap-desktop": "120px"
+                    },
+                    "fontFamily": {
+                        "headline-lg": ["Playfair Display"],
+                        "body-lg": ["Manrope"],
+                        "label-caps": ["Manrope"],
+                        "body-sm": ["Manrope"],
+                        "title-md": ["Manrope"],
+                        "headline-lg-mobile": ["Playfair Display"],
+                        "display-lg": ["Playfair Display"]
+                    },
+                    "fontSize": {
+                        "headline-lg": ["32px", {"lineHeight": "40px", "fontWeight": "600"}],
+                        "body-lg": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
+                        "label-caps": ["12px", {"lineHeight": "16px", "letterSpacing": "0.1em", "fontWeight": "700"}],
+                        "body-sm": ["14px", {"lineHeight": "20px", "fontWeight": "400"}],
+                        "title-md": ["20px", {"lineHeight": "28px", "fontWeight": "600"}],
+                        "headline-lg-mobile": ["28px", {"lineHeight": "36px", "fontWeight": "600"}],
+                        "display-lg": ["48px", {"lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "700"}]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        .golden-gradient {
+            background: linear-gradient(135deg, #ffdc8e 0%, #e3c06f 100%);
+        }
+        .obsidian-overlay {
+            background: linear-gradient(to bottom, rgba(8, 20, 37, 0.4) 0%, rgba(8, 20, 37, 0.95) 100%);
+        }
+        .card-glow:hover {
+            box-shadow: 0px 20px 40px rgba(227, 192, 111, 0.08);
+        }
+        .glass-panel {
+            background: rgba(21, 32, 49, 0.7);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+        }
+        ::-webkit-scrollbar { width: 8px; }
+        ::-webkit-scrollbar-track { background: #040e1f; }
+        ::-webkit-scrollbar-thumb { background: #e3c06f; border-radius: 4px; }
+        .font-display-lg { font-family: 'Playfair Display', serif; }
+    </style>
+</head>
+<body class="bg-background text-on-background font-body-lg overflow-x-hidden">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-surface/80 backdrop-blur-md border-b border-primary/10 shadow-sm transition-all duration-300">
+<div class="flex justify-between items-center px-gutter py-3 max-w-container-max mx-auto">
+<a class="flex items-center" href="#">
+<img alt="Poorvi Best Travels Logo" class="h-12 w-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBCCvr7Bsbt45LniU_-WLDLiqG1D02cLFs7Qw2vz93o92zKRIaFicuoaVt46AWpzPhNDzxVVyi9SdfEiVz1CX3iN3MzWo8gIrk8zrBlIpkATzX6i3gaMbXnYci8vq2wTLGM0sfzIk2RzV2MXf60s-HUGKYHEun3DahCsI_3bDkTQVrClWJSzFeHAPU07A5cz7stqnzDAgQWYEbuBYMTYfWPcesVk32SjJYyMlhUszDXAFQppyXp5X48-ASBaTbFFN5ILBo5Ys1na2A"/>
+</a>
+<!-- Desktop Nav -->
+<div class="hidden md:flex space-x-8 items-center">
+<a class="text-primary font-bold border-b-2 border-primary pb-1 text-body-sm" href="#">Home</a>
+<a class="text-on-surface-variant font-medium hover:text-primary transition-colors duration-300 text-body-sm" href="#services">Services</a>
+<a class="text-on-surface-variant font-medium hover:text-primary transition-colors duration-300 text-body-sm" href="#fleet">Fleet</a>
+<a class="text-on-surface-variant font-medium hover:text-primary transition-colors duration-300 text-body-sm" href="#tourism">Tourism</a>
+<a class="text-on-surface-variant font-medium hover:text-primary transition-colors duration-300 text-body-sm" href="#reviews">Reviews</a>
+<a class="text-on-surface-variant font-medium hover:text-primary transition-colors duration-300 text-body-sm" href="#contact">Contact</a>
+<button class="golden-gradient text-on-primary-fixed px-6 py-2 rounded-xl font-bold hover:scale-105 transition-transform text-label-caps">BOOK NOW</button>
+</div>
+<!-- Mobile Menu Icon -->
+<button class="md:hidden text-primary">
+<span class="material-symbols-outlined">menu</span>
+</button>
+</div>
+</nav>
+<!-- Hero Section -->
+<section class="relative h-screen flex items-center pt-20">
+<div class="absolute inset-0 z-0">
+<div class="absolute inset-0 obsidian-overlay z-10"></div>
+<img class="w-full h-full object-cover" data-alt="A cinematic low-angle shot of a luxury black SUV driving through the illuminated streets of Bengaluru at dusk." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCBJpVW8dgDo5XwnNqxVJt4gRXRsm1M3QfeUlZQKuGeJztpZvIdUkHe8JRnPz_f3aCS--MXm4s-gNWp1ZXpA3-oJUDd04uM5kRoU9bYgIovaSoJ3820dC30ot7uEOWrfvw018kOlErFt6x9_GKneZYg_P-ZmP4fMG86oVSIMgessI0J4LaCOaAV63V4KITKg4VmBmZr5f-_qrfYuTSrLdN9OsluvoIO6lXtuqSpmDpHPWxMUj0xnem2lw5CA45MDMrVbzEPWO6N18Q"/>
+</div>
+<div class="relative z-20 max-w-container-max mx-auto px-gutter grid grid-cols-1 md:grid-cols-2 gap-16 items-center w-full">
+<div class="space-y-6">
+<h1 class="font-display-lg text-[40px] md:text-display-lg text-primary leading-tight">
+                    Premium Taxi &amp; <br/>Travel Services <br/><span class="text-white">in Bengaluru</span>
+</h1>
+<p class="text-body-lg text-on-surface-variant max-w-lg">
+                    Experience the pinnacle of luxury transfers. From airport pickups to bespoke outstation tours, we redefine travel with elegance and punctuality.
+                </p>
+<div class="flex space-x-4 pt-4">
+<div class="flex items-center space-x-2">
+<span class="material-symbols-outlined text-primary">verified</span>
+<span class="text-label-caps">CERTIFIED DRIVERS</span>
+</div>
+<div class="flex items-center space-x-2">
+<span class="material-symbols-outlined text-primary">schedule</span>
+<span class="text-label-caps">24/7 SUPPORT</span>
+</div>
+</div>
+</div>
+<!-- Booking Form -->
+<div class="glass-panel p-8 rounded-xl shadow-2xl">
+<h3 class="font-headline-lg text-primary mb-6">Online Booking</h3>
+<form class="grid grid-cols-1 md:grid-cols-2 gap-4">
+<div class="col-span-2 md:col-span-1">
+<label class="block text-label-caps text-on-surface-variant mb-1 uppercase">Pickup Location</label>
+<input class="w-full bg-surface-container-low border-b border-white/20 focus:border-primary text-white py-3 px-0 focus:ring-0 outline-none" placeholder="Enter pickup area" type="text"/>
+</div>
+<div class="col-span-2 md:col-span-1">
+<label class="block text-label-caps text-on-surface-variant mb-1 uppercase">Drop Location</label>
+<input class="w-full bg-surface-container-low border-b border-white/20 focus:border-primary text-white py-3 px-0 focus:ring-0 outline-none" placeholder="Enter destination" type="text"/>
+</div>
+<div class="col-span-2 md:col-span-1">
+<label class="block text-label-caps text-on-surface-variant mb-1 uppercase">Trip Type</label>
+<select class="w-full bg-surface-container-low border-b border-white/20 focus:border-primary text-white py-3 px-0 focus:ring-0 appearance-none outline-none">
+<option>Airport Transfer</option>
+<option>Local Hourly</option>
+<option>Outstation</option>
+</select>
+</div>
+<div class="col-span-2 md:col-span-1">
+<label class="block text-label-caps text-on-surface-variant mb-1 uppercase">Travel Date</label>
+<input class="w-full bg-surface-container-low border-b border-white/20 focus:border-primary text-white py-3 px-0 focus:ring-0 outline-none" type="date"/>
+</div>
+<div class="col-span-2">
+<label class="block text-label-caps text-on-surface-variant mb-1 uppercase">Phone Number</label>
+<input class="w-full bg-surface-container-low border-b border-white/20 focus:border-primary text-white py-3 px-0 focus:ring-0 outline-none" placeholder="+91" type="tel"/>
+</div>
+<div class="col-span-2 pt-4">
+<button class="w-full golden-gradient text-on-primary-fixed py-4 rounded-xl font-bold text-label-caps tracking-widest hover:brightness-110 transition-all uppercase">Check Availability</button>
+</div>
+</form>
+</div>
+</div>
+</section>
+<!-- Services Grid -->
+<section class="py-section-padding max-w-container-max mx-auto px-gutter" id="services">
+<div class="text-center mb-16">
+<span class="text-primary text-label-caps block mb-2 uppercase">OUR OFFERINGS</span>
+<h2 class="font-headline-lg text-white">Travel Services Tailored for You</h2>
+</div>
+<div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6">
+<!-- Service Items -->
+<div class="glass-panel p-6 text-center card-glow transition-all duration-300 rounded-xl">
+<span class="material-symbols-outlined text-primary text-4xl mb-4">local_taxi</span>
+<h4 class="font-bold text-white mb-2">Airport Taxi</h4>
+<p class="text-body-sm text-on-surface-variant">Stress-free arrivals &amp; departures</p>
+</div>
+<div class="glass-panel p-6 text-center card-glow transition-all duration-300 rounded-xl">
+<span class="material-symbols-outlined text-primary text-4xl mb-4">distance</span>
+<h4 class="font-bold text-white mb-2">Outstation</h4>
+<p class="text-body-sm text-on-surface-variant">Inter-city luxury travel</p>
+</div>
+<div class="glass-panel p-6 text-center card-glow transition-all duration-300 rounded-xl">
+<span class="material-symbols-outlined text-primary text-4xl mb-4">schedule</span>
+<h4 class="font-bold text-white mb-2">Local</h4>
+<p class="text-body-sm text-on-surface-variant">Hourly rentals in the city</p>
+</div>
+<div class="glass-panel p-6 text-center card-glow transition-all duration-300 rounded-xl">
+<span class="material-symbols-outlined text-primary text-4xl mb-4">groups</span>
+<h4 class="font-bold text-white mb-2">Tempo Traveller</h4>
+<p class="text-body-sm text-on-surface-variant">Group trips made easy</p>
+</div>
+<div class="glass-panel p-6 text-center card-glow transition-all duration-300 rounded-xl">
+<span class="material-symbols-outlined text-primary text-4xl mb-4">directions_bus</span>
+<h4 class="font-bold text-white mb-2">Mini Bus</h4>
+<p class="text-body-sm text-on-surface-variant">For large group excursions</p>
+</div>
+<div class="glass-panel p-6 text-center card-glow transition-all duration-300 rounded-xl">
+<span class="material-symbols-outlined text-primary text-4xl mb-4">corporate_fare</span>
+<h4 class="font-bold text-white mb-2">Corporate</h4>
+<p class="text-body-sm text-on-surface-variant">Premium executive mobility</p>
+</div>
+</div>
+</section>
+<!-- Vehicle Pricing Tabs -->
+<section class="py-section-padding bg-surface-container-lowest" id="fleet">
+<div class="max-w-container-max mx-auto px-gutter">
+<div class="flex flex-col md:flex-row justify-between items-end mb-12 gap-8">
+<div>
+<span class="text-primary text-label-caps block mb-2 uppercase">THE FLEET</span>
+<h2 class="font-headline-lg text-white">Transparent Pricing</h2>
+</div>
+<div class="flex space-x-2 bg-surface-container p-1 rounded-full">
+<button class="bg-primary text-on-primary px-6 py-2 rounded-full font-bold text-body-sm">Airport Taxi</button>
+<button class="text-on-surface-variant px-6 py-2 rounded-full font-bold text-body-sm hover:text-white transition-colors">Outstation</button>
+<button class="text-on-surface-variant px-6 py-2 rounded-full font-bold text-body-sm hover:text-white transition-colors">Local</button>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+<!-- Vehicle Card 1 -->
+<div class="bg-white rounded-xl overflow-hidden group">
+<div class="p-6 bg-secondary-fixed flex justify-center h-48 items-center">
+<img alt="Sedan Prime" class="group-hover:scale-110 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida/ADBb0uiDmgP7c2DE_0gO7IFgEHRUGyY3Q9oXjszh-IZj0NIWlzqrYels0cuVGVMx738wN82dpkEbO28eEARft_UMcHjpZ3vJ_7rg9p32lh2hCk2ZPxOgYADWuQI8Pu9Vzf6o82O4GiC2VFXHXP8eRJc3DF6pkYVT5oICDJGPs2eK8hV0fVGVD6DD_ARW400b-bouvLEN0_7_8oPNwU-bNhnFwsk_AA6plxAfmwTKcEE9mWbKCChqT_77_asNlQ"/>
+</div>
+<div class="p-6 text-surface">
+<div class="flex justify-between items-start mb-4">
+<div>
+<h4 class="font-title-md text-surface leading-tight">Sedan Prime</h4>
+<div class="flex items-center gap-2 text-body-sm text-on-secondary-fixed-variant mt-1">
+<span class="material-symbols-outlined text-sm">ac_unit</span> AC 
+                                    <span class="material-symbols-outlined text-sm ml-2">person</span> 4 Passengers
+                                </div>
+</div>
+</div>
+<div class="mb-6">
+<span class="text-outline text-body-sm line-through">₹1199</span>
+<div class="text-[28px] font-bold text-surface">₹999 <span class="text-body-sm font-normal text-on-secondary-fixed-variant">Starting</span></div>
+<p class="text-[10px] text-outline mt-1 uppercase tracking-tighter">Incl. Tolls for Airport Drop</p>
+</div>
+<div class="flex gap-2">
+<button class="flex-1 golden-gradient text-on-primary-fixed py-3 rounded-lg font-bold text-sm">Book Now</button>
+<button class="w-12 h-12 flex items-center justify-center bg-surface text-primary rounded-lg hover:bg-surface-bright transition-colors">
+<img alt="WhatsApp" class="w-6 h-6 invert" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDPhSIaEc8z8zamEq7cJOFMeI8bIBV0x79m9H27yRAc7-yKsEj9UycCFPBmwtaVwSlT8kqx5_LaWIG2eJRohwrgpP3F36-Jg-6WhYfjWyE4rwwbXI2inh18nnAzVo1VxIT99QHjLWc5Dx-rv6WeP59SVQcxCLphejpTc5PlKcZU2Jo_fd87UYRaMh6sXIkhWHTsrJb-Nq7U4LQkd0cnKBXplbwP2YNApc6TvyyS6nLfH1M9-n4tzpiNf7PcomLR77VXR7fOTf9TkUk"/>
+</button>
+</div>
+</div>
+</div>
+<!-- Vehicle Card 2 -->
+<div class="bg-white rounded-xl overflow-hidden group">
+<div class="p-6 bg-secondary-fixed flex justify-center h-48 items-center">
+<img alt="Innova Crysta" class="group-hover:scale-110 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida/ADBb0uh1QKqYiYMd-MsV416S-XZ065OfBDRAjqrYe2352SaKkPv4GLdUV5QhwRY3joJNLLO2xbVuO1l7hp8iuILsqEkd46Ri9_rxv0GNBD-O3cqvRgGHFjKCnyfm1qn3dTC8PXOHRJzYfyRHHFRQvv263dSGU7mNP8m8m9K7EvncBxZZZK6PSNe-O9Pb5_0R9Oxaykx4yTCZBUHAlQyXNfJFCyo56yEkiL6Ex_P9izknWvsAsAIPx0eJ5GsJcQ"/>
+</div>
+<div class="p-6 text-surface">
+<div class="flex justify-between items-start mb-4">
+<div>
+<h4 class="font-title-md text-surface leading-tight">Innova Crysta</h4>
+<div class="flex items-center gap-2 text-body-sm text-on-secondary-fixed-variant mt-1">
+<span class="material-symbols-outlined text-sm">ac_unit</span> AC 
+                                    <span class="material-symbols-outlined text-sm ml-2">person</span> 7 Passengers
+                                </div>
+</div>
+</div>
+<div class="mb-6">
+<span class="text-outline text-body-sm line-through">₹2299</span>
+<div class="text-[28px] font-bold text-surface">₹1899 <span class="text-body-sm font-normal text-on-secondary-fixed-variant">Starting</span></div>
+<p class="text-[10px] text-outline mt-1 uppercase tracking-tighter">Luxury Multi-purpose Vehicle</p>
+</div>
+<div class="flex gap-2">
+<button class="flex-1 golden-gradient text-on-primary-fixed py-3 rounded-lg font-bold text-sm">Book Now</button>
+<button class="w-12 h-12 flex items-center justify-center bg-surface text-primary rounded-lg hover:bg-surface-bright transition-colors">
+<img alt="WhatsApp" class="w-6 h-6 invert" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCeNMk192KXvzGW3AW5SaGL9eTFMKAOXQC2CW12zIXUlkkRQDoyWkY1-eFuruQvehiMttT4NxFinv9U5ZqcsQGcCeF9DNGab7ajZKpARzmrg7fGwqTuZZxHcalA7GeAT1OPyV2jm_PBGnrQEBcoc-BlktXf5Q58QUYZu6wMRam5QT6gwZxldHXggxARWVxKTAr7S1pnq_9nmHqIOx6u2IaaflZTGgEbI6NpX7xp1iSIYZq_anOExIO0SyJgWE6JuUENHUiv0qCA7SI"/>
+</button>
+</div>
+</div>
+</div>
+<!-- Vehicle Card 3 -->
+<div class="bg-white rounded-xl overflow-hidden group">
+<div class="p-6 bg-secondary-fixed flex justify-center h-48 items-center">
+<img alt="Innova Hycross" class="group-hover:scale-110 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida/ADBb0uiZJRVF5tWuwti7sS0edUl-h2ZBTGGyIiVySPcw0uHFuxCmWaPvNBEI-nwfk4-GeLVfEY7IXnGlu_PhhNidymsGk-M-mMgdrEB13_LcZhp-EGnW8aktrI4X6thrcHz1wemfvLiDDy7AcJpfO8MVBkIpXrO3DlXbePy3Tul5u1kzJVBTWdPvx0kt0oGrTxoxjVIZp6IWvIU5yNHwzR8I1nrSR5d7N9W9Hb8lZXhsrj60oY3xVB0t3PhdKg"/>
+</div>
+<div class="p-6 text-surface">
+<div class="flex justify-between items-start mb-4">
+<div>
+<h4 class="font-title-md text-surface leading-tight">Hycross Hybrid</h4>
+<div class="flex items-center gap-2 text-body-sm text-on-secondary-fixed-variant mt-1">
+<span class="material-symbols-outlined text-sm">ac_unit</span> AC 
+                                    <span class="material-symbols-outlined text-sm ml-2">person</span> 6 Passengers
+                                </div>
+</div>
+</div>
+<div class="mb-6">
+<span class="text-outline text-body-sm line-through">₹2499</span>
+<div class="text-[28px] font-bold text-surface">₹2199 <span class="text-body-sm font-normal text-on-secondary-fixed-variant">Starting</span></div>
+<p class="text-[10px] text-outline mt-1 uppercase tracking-tighter">Premium Hybrid Experience</p>
+</div>
+<div class="flex gap-2">
+<button class="flex-1 golden-gradient text-on-primary-fixed py-3 rounded-lg font-bold text-sm">Book Now</button>
+<button class="w-12 h-12 flex items-center justify-center bg-surface text-primary rounded-lg hover:bg-surface-bright transition-colors">
+<img alt="WhatsApp" class="w-6 h-6 invert" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBZlq5YYCEE5TDY3H4JeFtsqRw-ZSf0QjCNFIDUiIe3vUIM79COOgDrk4RQv2YOQY_8nuAHYz1K_s8aCZHUN_Nr1W8MP3_XEKQn9wZ4G50eXCF7q8J-yPGwQ4oFBaWpYcRAZC0bFVCHZEEAcHtd7nwlfTqylYRaH6A1AuguEsHUf6fw0bLIHUbcwb0eIjSt7LepXj0knDWk4hmQzgLdZMCd-p5j9fe8qsdC9P8eI-GCBocbbF8F7c_mxQUjSJgXFrAiVbK7aJminkA"/>
+</button>
+</div>
+</div>
+</div>
+<!-- Vehicle Card 4 -->
+<div class="bg-white rounded-xl overflow-hidden group">
+<div class="p-6 bg-secondary-fixed flex justify-center h-48 items-center">
+<img alt="Fortuner" class="group-hover:scale-110 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida/ADBb0ugkybYswV6GHKHr7Qb1bsUSpX0G9QTYUfjqvWOoVkYBrkGzFiHTtwulOoLk-_u58i15PnHakan21Jghdz9X0RQRJ7_BGDlhzbEoMqoaUNtbYwkooF0zl9E6EShqpq4BKPSY1H982tdhjsPa-M1uZPJNRaNR4kmqG4LxKoAPiWvp1WOflXYcCbmGhTeyWNAmBSXAtDDbSF5kjzjR4GG-m4IoybxFZVnLjnmsjLKnBjBXcABojrfYa4JkgtA"/>
+</div>
+<div class="p-6 text-surface">
+<div class="flex justify-between items-start mb-4">
+<div>
+<h4 class="font-title-md text-surface leading-tight">Toyota Fortuner</h4>
+<div class="flex items-center gap-2 text-body-sm text-on-secondary-fixed-variant mt-1">
+<span class="material-symbols-outlined text-sm">ac_unit</span> AC 
+                                    <span class="material-symbols-outlined text-sm ml-2">person</span> 7 Passengers
+                                </div>
+</div>
+</div>
+<div class="mb-6">
+<span class="text-outline text-body-sm line-through">₹4999</span>
+<div class="text-[28px] font-bold text-surface">₹3999 <span class="text-body-sm font-normal text-on-secondary-fixed-variant">Starting</span></div>
+<p class="text-[10px] text-outline mt-1 uppercase tracking-tighter">VIP Travel Excellence</p>
+</div>
+<div class="flex gap-2">
+<button class="flex-1 golden-gradient text-on-primary-fixed py-3 rounded-lg font-bold text-sm">Book Now</button>
+<button class="w-12 h-12 flex items-center justify-center bg-surface text-primary rounded-lg hover:bg-surface-bright transition-colors">
+<img alt="WhatsApp" class="w-6 h-6 invert" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAty1OsbqIQ_BGDtUPFGZKlSRq95wRv1_Nqj5SJwdLzNKo77YJsiJa0_KxMAF7lVNxGmegUkq289i50mEBeSNpCt8VjJi6xJ9SrdCVntQTvwTageCEYbiqoZXIc5fE_qpOQTqOVczFHSQEN6966VlvInrPSzFv4hsZ6JGolwh_aTAE3GRyG13I1HRW6VYoosJqBMs3i5aHr8CZaxrA0W9RVTQlbRK3LWyb8o2ldMhUb1HhCRpL7Q3TMqxjMb-_ut5qWUdAyFcY3xkc"/>
+</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Tourism Section -->
+<section class="py-section-padding px-gutter max-w-container-max mx-auto" id="tourism">
+<div class="text-center mb-16">
+<span class="text-primary text-label-caps block mb-2 uppercase">EXPLORE KARNATAKA</span>
+<h2 class="font-headline-lg text-white">Curated Tourism Packages</h2>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6 h-[800px] md:h-[600px]">
+<!-- Heritage -->
+<div class="relative rounded-xl overflow-hidden md:col-span-1 md:row-span-2 group">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" src="https://lh3.googleusercontent.com/aida/ADBb0ujW_xsQKIp5DXDL0u4DvQRYcFelv3RhP1sKdPo-wp0nA90w31X4AEaxk_6KXdEBb0cLI_XHYPTrHR7lZwQOPHJbtXYW93Scv4hYyuYRbb7DqPTF7eIoaoZHVrcM3nzM32LFrARgxWYhUf1erc4_gve7q3oHMk_rXyj537jLMCJOAdEMfu0BVcXLcdYslxMKtgKDtwvg7WhPdivkjUY8yhhnNdLCQOwbLxQlk0kE87elSECAJAJOEQoSTaU"/>
+<div class="absolute inset-0 bg-gradient-to-t from-obsidian via-transparent to-transparent"></div>
+<div class="absolute bottom-6 left-6">
+<span class="bg-primary-container text-on-primary-container px-3 py-1 text-label-caps uppercase font-bold mb-2 inline-block rounded-lg">Heritage</span>
+<h3 class="text-white font-title-md">Mysuru Palace</h3>
+</div>
+</div>
+<!-- Coffee Hills -->
+<div class="relative rounded-xl overflow-hidden group">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" src="https://lh3.googleusercontent.com/aida/ADBb0uhwsae4PGNXpkdA8F4uyag5tw1W99yUdrK4GZz9WqdBJlffDQ84NQD-x-jCxRIyExTgVrFrFBRRW0nHezJ329v61bUJ9HV4oq1zI52KrJ65Uh52Ys5gfhV7ZjPlbsYNE8xF3XLELLSji0MOf93tjQaAU-zmLDWgmC7VFKl96tEgmiqT5xZZIuggCbKV96X4eCJza27PoIYTCvYLpx1Hw4RqvAQ_Hxn0YHLjzdqSjl2BYPecnXQbPJD0mu8"/>
+<div class="absolute inset-0 bg-gradient-to-t from-obsidian via-transparent to-transparent"></div>
+<div class="absolute bottom-6 left-6">
+<span class="bg-primary-container text-on-primary-container px-3 py-1 text-label-caps uppercase font-bold mb-2 inline-block rounded-lg">Coffee Hills</span>
+<h3 class="text-white font-title-md">Coorg</h3>
+</div>
+</div>
+<!-- Ruins -->
+<div class="relative rounded-xl overflow-hidden group">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" src="https://lh3.googleusercontent.com/aida/ADBb0uiB-BocwXDvsWfK6FwPONtImYkBFkm6hP1vW-tsYggOH0_GzeqLJVT0t7Rsb31prigs_zCb_5sS7qcyFpv4LNv0n-1sTdH7wV3Mkq-mv9V2GlAzI-0o2Tfi_lRgkVFwSi7eAsrqK1rn8ei2XrVrf781OI0m8I-UlQZ1cIQEIkwYgTIg8KXgUo78dq1xRHVY1Weq-TGeEHRiZD0Kie4eknQf8rNQsjE6-VurKY32XlfxdiQtZtHdnCcyHg"/>
+<div class="absolute inset-0 bg-gradient-to-t from-obsidian via-transparent to-transparent"></div>
+<div class="absolute bottom-6 left-6">
+<span class="bg-primary-container text-on-primary-container px-3 py-1 text-label-caps uppercase font-bold mb-2 inline-block rounded-lg">Historical</span>
+<h3 class="text-white font-title-md">Hampi</h3>
+</div>
+</div>
+<!-- Kerala -->
+<div class="relative rounded-xl overflow-hidden group">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" src="https://lh3.googleusercontent.com/aida/ADBb0uhIlrt1Kkd31mgd-Zr7yfZHRpMcO9eGh9JNmBbZ-xLFRqNgzwZ86wfp_oj3JBRs7WvIXcVO1tYytMVpw02uj7qEpyRSA3y2PoGnP81aXHKJ9aPinQ2bG-MSJEijSH7khAPvWEESFanjsdtklwQ98wLM8L57RvLG16dXXvmRopvWZGKApW8vt-l4ZgCjncZAybVUoX0WakZMwSLXpyDgwxgnb4zbEdYk7xZYNKENl0xo3mRj5j3Um2oSWgA"/>
+<div class="absolute inset-0 bg-gradient-to-t from-obsidian via-transparent to-transparent"></div>
+<div class="absolute bottom-6 left-6">
+<span class="bg-primary-container text-on-primary-container px-3 py-1 text-label-caps uppercase font-bold mb-2 inline-block rounded-lg">God's Country</span>
+<h3 class="text-white font-title-md">Wayand &amp; Kerala</h3>
+</div>
+</div>
+<!-- Adventure/Goa -->
+<div class="relative rounded-xl overflow-hidden group">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" src="https://lh3.googleusercontent.com/aida/ADBb0uiHDpslpQDIyX5POjftEeq6jArNUeQTyBxbE0VjCcoIV7MIQdLiSsausl2DfJTJL-vapYAROWBIAHc34kTFtHaiDJlYPIhEpYqazW0SovHPzx-oAoWbCo3embvecYaFblwz_yD7yixOXcijSfcfmlo5RxfxeYRTilMVYtximtICeHNTZCMJOoxWtoyjTw2S08YV-WSC1jBK_ZJ7SACOTal0xrkSjZakiLK_lk-NeVLSIoGzbr0v1CEa13Q"/>
+<div class="absolute inset-0 bg-gradient-to-t from-obsidian via-transparent to-transparent"></div>
+<div class="absolute bottom-6 left-6">
+<span class="bg-primary-container text-on-primary-container px-3 py-1 text-label-caps uppercase font-bold mb-2 inline-block rounded-lg">Beaches</span>
+<h3 class="text-white font-title-md">Goa &amp; Western Ghats</h3>
+</div>
+</div>
+</div>
+</section>
+<!-- Reviews -->
+<section class="py-section-padding bg-surface-container-low" id="reviews">
+<div class="max-w-container-max mx-auto px-gutter">
+<div class="text-center mb-16">
+<span class="text-primary text-label-caps block mb-2 uppercase">GUEST EXPERIENCES</span>
+<h2 class="font-headline-lg text-white">What Our Travelers Say</h2>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<div class="glass-panel p-8 rounded-xl relative">
+<div class="flex text-primary mb-4">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<p class="text-body-lg text-on-surface-variant italic mb-6">"Exceptional service. The driver was very professional and the car was spotless. Poorvi Best Travels is my go-to for airport drops in Bengaluru."</p>
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 rounded-full bg-primary-container flex items-center justify-center text-on-primary-container font-bold">AK</div>
+<h5 class="text-white font-bold">Abhi Kutty</h5>
+</div>
+</div>
+<div class="glass-panel p-8 rounded-xl relative">
+<div class="flex text-primary mb-4">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<p class="text-body-lg text-on-surface-variant italic mb-6">"Booked an outstation trip to Coorg. Very reasonable pricing and great local knowledge from the chauffeur. Highly recommended for family trips."</p>
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 rounded-full bg-primary-container flex items-center justify-center text-on-primary-container font-bold">BV</div>
+<h5 class="text-white font-bold">Boddu Venkatesh</h5>
+</div>
+</div>
+<div class="glass-panel p-8 rounded-xl relative">
+<div class="flex text-primary mb-4">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<p class="text-body-lg text-on-surface-variant italic mb-6">"Clean vehicles and punctual service. Their airport taxi rates are actually competitive with app-based services but with much better quality."</p>
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 rounded-full bg-primary-container flex items-center justify-center text-on-primary-container font-bold">PR</div>
+<h5 class="text-white font-bold">Prashanth Radha</h5>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Contact & Footer -->
+<footer class="bg-surface-container-lowest w-full pt-section-gap-desktop pb-base border-t border-primary/10" id="contact">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-gutter px-gutter max-w-container-max mx-auto mb-16">
+<div class="space-y-6">
+<a class="block" href="#">
+<img alt="Poorvi Best Travels Logo" class="h-16 w-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBCCvr7Bsbt45LniU_-WLDLiqG1D02cLFs7Qw2vz93o92zKRIaFicuoaVt46AWpzPhNDzxVVyi9SdfEiVz1CX3iN3MzWo8gIrk8zrBlIpkATzX6i3gaMbXnYci8vq2wTLGM0sfzIk2RzV2MXf60s-HUGKYHEun3DahCsI_3bDkTQVrClWJSzFeHAPU07A5cz7stqnzDAgQWYEbuBYMTYfWPcesVk32SjJYyMlhUszDXAFQppyXp5X48-ASBaTbFFN5ILBo5Ys1na2A"/>
+</a>
+<p class="text-on-surface-variant text-body-sm">Your trusted partner for luxury airport transfers and tourism in South India. Available 24/7 at your doorstep.</p>
+<div class="flex space-x-4">
+<a class="w-10 h-10 rounded-full bg-surface-container flex items-center justify-center text-primary hover:bg-primary hover:text-surface transition-all" href="#"><span class="material-symbols-outlined">face_nod</span></a>
+<a class="w-10 h-10 rounded-full bg-surface-container flex items-center justify-center text-primary hover:bg-primary hover:text-surface transition-all" href="#"><span class="material-symbols-outlined">photo_camera</span></a>
+</div>
+</div>
+<div>
+<h4 class="text-white font-bold mb-6 uppercase tracking-widest text-label-caps">QUICK LINKS</h4>
+<ul class="space-y-4 text-on-surface-variant text-body-sm">
+<li><a class="hover:text-primary underline transition-transform hover:translate-x-1 inline-block" href="#">Home</a></li>
+<li><a class="hover:text-primary underline transition-transform hover:translate-x-1 inline-block" href="#services">Services</a></li>
+<li><a class="hover:text-primary underline transition-transform hover:translate-x-1 inline-block" href="#fleet">Fleet</a></li>
+<li><a class="hover:text-primary underline transition-transform hover:translate-x-1 inline-block" href="#tourism">Tourism</a></li>
+</ul>
+</div>
+<div>
+<h4 class="text-white font-bold mb-6 uppercase tracking-widest text-label-caps">CONTACT INFO</h4>
+<ul class="space-y-4 text-on-surface-variant text-body-sm">
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-primary">location_on</span>
+<span>JP Nagar, 7th Phase,<br/>Bengaluru, KA 560078</span>
+</li>
+<li class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary">call</span>
+<a class="hover:text-primary" href="tel:+919902727466">099027 27466</a>
+</li>
+<li class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary">mail</span>
+<a class="hover:text-primary" href="mailto:info@poorvibesttravels.com">info@poorvibesttravels.com</a>
+</li>
+</ul>
+</div>
+<div class="h-64 rounded-xl overflow-hidden border border-white/10">
+<!-- Map Placeholder -->
+<div class="w-full h-full bg-surface-container flex flex-col items-center justify-center relative">
+<img class="absolute inset-0 w-full h-full object-cover opacity-30" data-alt="A clean, minimalist digital map illustration focused on the JP Nagar district in Bengaluru." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAwF21BrdH8ChpCoKx9FtBFKzJU-VioGDJYuFEwdhgxrQcVLaZJDr3P-hkbz1fio44f6adP-j834wAQkOyXKnbaV108oQxDpg86EYkdvbMUyEXcdUl919QLRx8a0n1bgn9PG2DuOrqqaOWvdVZSybBl26BGWiDYKRjbH1FN2KLAG0F_4FwcHW5R7Xvx9XNgqzCVKTq6hf-ji0_TPFWbCAQQw507SzVrwl4wEJCE5B_zf1ewfcJdytr55y1MLHlR_4MK2ki1TvaJgAU"/>
+<span class="material-symbols-outlined text-primary text-4xl relative z-10">map</span>
+<p class="text-label-caps text-white relative z-10 mt-2 font-bold">FIND US IN JP NAGAR</p>
+</div>
+</div>
+</div>
+<div class="border-t border-white/5 py-8 text-center px-gutter">
+<p class="text-label-caps text-on-surface-variant">© 2024 POORVI BEST TRAVELS. ALL RIGHTS RESERVED.</p>
+</div>
+</footer>
+<!-- Floating Buttons -->
+<div class="fixed bottom-8 right-8 flex flex-col gap-4 z-50">
+<a class="w-14 h-14 bg-[#25D366] rounded-full flex items-center justify-center shadow-xl hover:scale-110 transition-transform" href="https://wa.me/919902727466" target="_blank">
+<img alt="WhatsApp" class="w-8 h-8" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC-orgIJUWIpIx3PaOSFLG_M5jLGjQrlS-OhE2h24b1d_PIHI9voJYzlSkCs2HBxmiQBGl9TurP6RF7fdHgOJcV36_dhhvXlU73TcYHx16mNgM1bIbTtaGxiVdXLxuFkH9JE2fXUmfz2RaoOPzvFMe-GMei25AezhnYwhH3kQu0f_yGVSXFdr3c56wLk0slhtAoM5A0r2nKaC_rP0ajaV-PHXJdJAhU5JDcsZB4hqLCrbrzdWpps3sgR0aJD8FfgRB8IFFKZ6EafTE"/>
+</a>
+<a class="w-14 h-14 bg-primary-container text-on-primary-container rounded-full flex items-center justify-center shadow-xl hover:scale-110 transition-transform" href="tel:+919902727466">
+<span class="material-symbols-outlined text-3xl">call</span>
+</a>
+</div>
+</body></html>
