@@ -29,17 +29,17 @@ const phases: Phase[] = [
     id: 1,
     name: "Heritage & Royalty",
     subtitle: "Palaces · Temples · Royal History",
-    bannerImg: "https://images.unsplash.com/photo-1570168007204-dfb528c6958f?w=900&q=80",
+    bannerImg: "https://images.unsplash.com/photo-1570168007204-dfb528c6958f?w=900&q=90",
     accent: "#c9a84c",
     destinations: [
       {
         name: "Mysuru",
         dist: "150 km from Bengaluru",
-        heroImg: "https://images.unsplash.com/photo-1570168007204-dfb528c6958f?w=900&q=80",
+        heroImg: "https://images.unsplash.com/photo-1570168007204-dfb528c6958f?w=900&q=90",
         images: [
           "https://images.unsplash.com/photo-1570168007204-dfb528c6958f?w=600&q=80",
-          "https://images.unsplash.com/photo-1606298855673-a1a36f8b33e2?w=600&q=80",
-          "https://images.unsplash.com/photo-1625642840647-3f4f36c2e28a?w=600&q=80",
+          "https://images.unsplash.com/photo-1595069906974-f8ae7aeaa7b1?w=600&q=80",
+          "https://images.unsplash.com/photo-1567157577867-05ccb1388e66?w=600&q=80",
         ],
         desc: "The City of Palaces — home to the magnificent Mysore Palace illuminated by 100,000 bulbs every Sunday. Chamundi Hill, Brindavan Gardens, and the fragrant Devaraja Market make Mysuru an unforgettable royal experience.",
         highlights: ["Mysore Palace (night illumination)", "Chamundi Hill Temple", "Brindavan Gardens", "Devaraja Market", "St. Philomena's Church"],
@@ -49,10 +49,10 @@ const phases: Phase[] = [
       {
         name: "Srirangapatna",
         dist: "130 km from Bengaluru",
-        heroImg: "https://images.unsplash.com/photo-1625642840647-3f4f36c2e28a?w=900&q=80",
+        heroImg: "https://images.unsplash.com/photo-1582560475093-ba66accbc095?w=900&q=90",
         images: [
-          "https://images.unsplash.com/photo-1625642840647-3f4f36c2e28a?w=600&q=80",
-          "https://images.unsplash.com/photo-1590050752117-238cb0fb12b1?w=600&q=80",
+          "https://images.unsplash.com/photo-1582560475093-ba66accbc095?w=600&q=80",
+          "https://images.unsplash.com/photo-1544531585-9847b68c8c86?w=600&q=80",
         ],
         desc: "The historic island fortress town of Tipu Sultan — walk through centuries of Deccan history at the fort, dungeons, mosque, and the serene Kaveri riverbanks.",
         highlights: ["Tipu Sultan's Fort", "Gumbaz Mausoleum", "Daria Daulat Palace", "Ranganathaswamy Temple", "Kaveri River Rafting"],
@@ -62,10 +62,10 @@ const phases: Phase[] = [
       {
         name: "Halebidu",
         dist: "220 km from Bengaluru",
-        heroImg: "https://images.unsplash.com/photo-1602505712865-ee1d3e5b01c9?w=900&q=80",
+        heroImg: "https://images.unsplash.com/photo-1548013146-72479768bada?w=900&q=90",
         images: [
-          "https://images.unsplash.com/photo-1602505712865-ee1d3e5b01c9?w=600&q=80",
-          "https://images.unsplash.com/photo-1590050752117-238cb0fb12b1?w=600&q=80",
+          "https://images.unsplash.com/photo-1548013146-72479768bada?w=600&q=80",
+          "https://images.unsplash.com/photo-1582560475093-ba66accbc095?w=600&q=80",
         ],
         desc: "The ancient capital of the Hoysala Empire — marvel at intricate soapstone carvings that have survived 800 years. Often combined with Belur for a full Hoysala heritage trail.",
         highlights: ["Hoysaleswara Temple", "Belur Chennakeshava Temple", "Archaeological Museum", "Intricate stone carvings", "Hoysala architecture"],
@@ -78,17 +78,17 @@ const phases: Phase[] = [
     id: 2,
     name: "Coffee Hills & Wildlife",
     subtitle: "Coffee Estates · Misty Hills · Safari",
-    bannerImg: "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=900&q=80",
+    bannerImg: "https://images.unsplash.com/photo-1611273427955-bbb8a13e1a45?w=900&q=90",
     accent: "#5a9a4a",
     destinations: [
       {
         name: "Chikmagalur",
         dist: "245 km from Bengaluru",
-        heroImg: "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=900&q=80",
+        heroImg: "https://images.unsplash.com/photo-1611273427955-bbb8a13e1a45?w=900&q=90",
         images: [
+          "https://images.unsplash.com/photo-1611273427955-bbb8a13e1a45?w=600&q=80",
           "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=600&q=80",
           "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=600&q=80",
-          "https://images.unsplash.com/photo-1558618047-3c8c76ca7d13?w=600&q=80",
         ],
         desc: "The birthplace of Indian coffee — rolling estates, misty Mullayanagiri peaks, and serene hill trails. Perfect for nature lovers and trekkers seeking cool weather and fresh brews.",
         highlights: ["Mullayanagiri Peak (1,930m)", "Coffee Estate Tours", "Bhadra Wildlife Sanctuary", "Hebbe Falls", "Z-Point Viewpoint"],
@@ -98,11 +98,11 @@ const phases: Phase[] = [
       {
         name: "Coorg / Madikeri",
         dist: "265 km from Bengaluru",
-        heroImg: "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=900&q=80",
+        heroImg: "https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=900&q=90",
         images: [
+          "https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=600&q=80",
+          "https://images.unsplash.com/photo-1611273427955-bbb8a13e1a45?w=600&q=80",
           "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=600&q=80",
-          "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=600&q=80",
-          "https://images.unsplash.com/photo-1558618047-3c8c76ca7d13?w=600&q=80",
         ],
         desc: "The Scotland of India — lush coffee and spice estates, Abbey Falls, Raja's Seat viewpoint, and the warm Kodava culture. A favourite monsoon escape with breathtaking mist-covered valleys.",
         highlights: ["Raja's Seat", "Abbey Falls", "Namdroling Monastery", "Coffee Plantation Stays", "Dubare Elephant Camp"],
@@ -112,9 +112,10 @@ const phases: Phase[] = [
       {
         name: "Kabini",
         dist: "220 km from Bengaluru",
-        heroImg: "https://images.unsplash.com/photo-1549366021-9f761d450615?w=900&q=80",
+        heroImg: "https://images.unsplash.com/photo-1549366021-9f761d450615?w=900&q=90",
         images: [
           "https://images.unsplash.com/photo-1549366021-9f761d450615?w=600&q=80",
+          "https://images.unsplash.com/photo-1575550959106-5a7defe28b56?w=600&q=80",
           "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=600&q=80",
         ],
         desc: "One of India's finest wildlife destinations — Kabini's backwaters and Nagarhole National Park are home to tigers, elephants, leopards, and rich birdlife. Best explored by jeep safari and boat.",
@@ -128,16 +129,17 @@ const phases: Phase[] = [
     id: 3,
     name: "Ruins & Sacred Coasts",
     subtitle: "Ancient Ruins · Beaches · Temples",
-    bannerImg: "https://images.unsplash.com/photo-1590050752117-238cb0fb12b1?w=900&q=80",
+    bannerImg: "https://images.unsplash.com/photo-1598977703858-a8e30f7c9753?w=900&q=90",
     accent: "#c97c3a",
     destinations: [
       {
         name: "Hampi",
         dist: "350 km from Bengaluru",
-        heroImg: "https://images.unsplash.com/photo-1590050752117-238cb0fb12b1?w=900&q=80",
+        heroImg: "https://images.unsplash.com/photo-1598977703858-a8e30f7c9753?w=900&q=90",
         images: [
+          "https://images.unsplash.com/photo-1598977703858-a8e30f7c9753?w=600&q=80",
           "https://images.unsplash.com/photo-1590050752117-238cb0fb12b1?w=600&q=80",
-          "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&q=80",
+          "https://images.unsplash.com/photo-1563207153-f403bf289096?w=600&q=80",
         ],
         desc: "A UNESCO World Heritage Site — the ruins of the Vijayanagara Empire spread across a surreal boulder-strewn landscape. The Virupaksha Temple, Vittala Temple, and Stone Chariot are iconic landmarks.",
         highlights: ["Virupaksha Temple", "Vittala Temple & Stone Chariot", "Tungabhadra River Coracle", "Hampi Bazaar", "Elephant Stables"],
@@ -147,10 +149,11 @@ const phases: Phase[] = [
       {
         name: "Gokarna",
         dist: "485 km from Bengaluru",
-        heroImg: "https://images.unsplash.com/photo-1512343879784-a960bf40e7f2?w=900&q=80",
+        heroImg: "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=900&q=90",
         images: [
-          "https://images.unsplash.com/photo-1512343879784-a960bf40e7f2?w=600&q=80",
           "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=600&q=80",
+          "https://images.unsplash.com/photo-1519046904884-53103b34b206?w=600&q=80",
+          "https://images.unsplash.com/photo-1566241832378-917a0f30db2a?w=600&q=80",
         ],
         desc: "A pristine pilgrimage town with some of Karnataka's most beautiful beaches — Om Beach, Paradise Beach, and Kudle Beach. A perfect mix of spirituality and nature.",
         highlights: ["Om Beach", "Mahabaleshwar Temple", "Paradise Beach Trek", "Kudle Beach", "Half Moon Beach"],
@@ -160,9 +163,9 @@ const phases: Phase[] = [
       {
         name: "Udupi",
         dist: "400 km from Bengaluru",
-        heroImg: "https://images.unsplash.com/photo-1590574475023-2e8e5efa8f4f?w=900&q=80",
+        heroImg: "https://images.unsplash.com/photo-1566241832378-917a0f30db2a?w=900&q=90",
         images: [
-          "https://images.unsplash.com/photo-1590574475023-2e8e5efa8f4f?w=600&q=80",
+          "https://images.unsplash.com/photo-1566241832378-917a0f30db2a?w=600&q=80",
           "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=600&q=80",
         ],
         desc: "Famous for its Sri Krishna Temple and authentic Udupi cuisine. Malpe Beach, St. Mary's Island, and the cultural richness of coastal Karnataka make this a delightful cultural getaway.",
@@ -176,16 +179,17 @@ const phases: Phase[] = [
     id: 4,
     name: "Kerala Circuit",
     subtitle: "Backwaters · Tea Hills · Spice Forests",
-    bannerImg: "https://images.unsplash.com/photo-1602216056096-3b40cc0c9944?w=900&q=80",
+    bannerImg: "https://images.unsplash.com/photo-1602216056096-3b40cc0c9944?w=900&q=90",
     accent: "#2a9d8f",
     destinations: [
       {
         name: "Alleppey / Alappuzha",
         dist: "605 km from Bengaluru",
-        heroImg: "https://images.unsplash.com/photo-1602216056096-3b40cc0c9944?w=900&q=80",
+        heroImg: "https://images.unsplash.com/photo-1602216056096-3b40cc0c9944?w=900&q=90",
         images: [
           "https://images.unsplash.com/photo-1602216056096-3b40cc0c9944?w=600&q=80",
-          "https://images.unsplash.com/photo-1612889699927-c5a83e876254?w=600&q=80",
+          "https://images.unsplash.com/photo-1625814587210-0cd26b3e3bba?w=600&q=80",
+          "https://images.unsplash.com/photo-1588416936097-41850ab3d86d?w=600&q=80",
         ],
         desc: "The Venice of the East — glide through serene Kerala backwaters on a traditional houseboat. Alleppey's canals, lagoons, and paddy fields create an unforgettable slow-travel experience.",
         highlights: ["Houseboat Stay", "Backwater Canals", "Vembanad Lake", "Kuttanad Paddy Fields", "Alappuzha Beach"],
@@ -195,7 +199,7 @@ const phases: Phase[] = [
       {
         name: "Munnar",
         dist: "465 km from Bengaluru",
-        heroImg: "https://images.unsplash.com/photo-1605540436563-5bca919ae766?w=900&q=80",
+        heroImg: "https://images.unsplash.com/photo-1605540436563-5bca919ae766?w=900&q=90",
         images: [
           "https://images.unsplash.com/photo-1605540436563-5bca919ae766?w=600&q=80",
           "https://images.unsplash.com/photo-1558618047-3c8c76ca7d13?w=600&q=80",
@@ -209,10 +213,11 @@ const phases: Phase[] = [
       {
         name: "Thekkady / Periyar",
         dist: "470 km from Bengaluru",
-        heroImg: "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=900&q=80",
+        heroImg: "https://images.unsplash.com/photo-1575550959106-5a7defe28b56?w=900&q=90",
         images: [
-          "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=600&q=80",
+          "https://images.unsplash.com/photo-1575550959106-5a7defe28b56?w=600&q=80",
           "https://images.unsplash.com/photo-1549366021-9f761d450615?w=600&q=80",
+          "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=600&q=80",
         ],
         desc: "Home to Periyar Tiger Reserve — take a boat ride on Periyar Lake surrounded by wild elephants and exotic birds. The spice plantations and Kathakali performances add cultural richness.",
         highlights: ["Periyar Lake Boat Safari", "Elephant Spotting", "Spice Plantation Tours", "Kathakali Show", "Bamboo Rafting"],
@@ -222,9 +227,9 @@ const phases: Phase[] = [
       {
         name: "Kochi / Fort Kochi",
         dist: "560 km from Bengaluru",
-        heroImg: "https://images.unsplash.com/photo-1590574475023-2e8e5efa8f4f?w=900&q=80",
+        heroImg: "https://images.unsplash.com/photo-1580674684081-7617fbf3d745?w=900&q=90",
         images: [
-          "https://images.unsplash.com/photo-1590574475023-2e8e5efa8f4f?w=600&q=80",
+          "https://images.unsplash.com/photo-1580674684081-7617fbf3d745?w=600&q=80",
           "https://images.unsplash.com/photo-1602216056096-3b40cc0c9944?w=600&q=80",
         ],
         desc: "A vibrant port city where Arabian, Portuguese, Dutch, and British cultures intertwine. Fort Kochi's Chinese fishing nets at sunset, the Jew Town spice market, and Mattancherry Palace are unforgettable.",
@@ -235,10 +240,11 @@ const phases: Phase[] = [
       {
         name: "Wayanad",
         dist: "285 km from Bengaluru",
-        heroImg: "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=900&q=80",
+        heroImg: "https://images.unsplash.com/photo-1574168898761-45e7f08f7ea2?w=900&q=90",
         images: [
-          "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=600&q=80",
+          "https://images.unsplash.com/photo-1574168898761-45e7f08f7ea2?w=600&q=80",
           "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=600&q=80",
+          "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=600&q=80",
         ],
         desc: "A lush forest district bordering Karnataka — tribal culture, ancient caves, bamboo forests, and the majestic Chembra Peak make Wayanad a hidden gem for nature lovers.",
         highlights: ["Chembra Peak Trek (Heart Lake)", "Edakkal Caves", "Banasura Sagar Dam", "Pookode Lake", "Soochipara Falls"],
@@ -251,15 +257,16 @@ const phases: Phase[] = [
     id: 5,
     name: "Adventure & Beach Finale",
     subtitle: "River Rafting · Beaches · Nightlife",
-    bannerImg: "https://images.unsplash.com/photo-1512343879784-a960bf40e7f2?w=900&q=80",
+    bannerImg: "https://images.unsplash.com/photo-1512343879784-a960bf40e7f2?w=900&q=90",
     accent: "#e76f51",
     destinations: [
       {
         name: "Dandeli",
         dist: "455 km from Bengaluru",
-        heroImg: "https://images.unsplash.com/photo-1530866495561-507c9faab2ed?w=900&q=80",
+        heroImg: "https://images.unsplash.com/photo-1530866495561-507c9faab2ed?w=900&q=90",
         images: [
           "https://images.unsplash.com/photo-1530866495561-507c9faab2ed?w=600&q=80",
+          "https://images.unsplash.com/photo-1504280390367-361c6d9f38f4?w=600&q=80",
           "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=600&q=80",
         ],
         desc: "Karnataka's adventure capital — white-water rafting on the Kali River, jungle safaris, kayaking, zip-lining, and night camping in dense forests. A paradise for thrill-seekers.",
@@ -270,7 +277,7 @@ const phases: Phase[] = [
       {
         name: "Goa",
         dist: "565 km from Bengaluru",
-        heroImg: "https://images.unsplash.com/photo-1512343879784-a960bf40e7f2?w=900&q=80",
+        heroImg: "https://images.unsplash.com/photo-1512343879784-a960bf40e7f2?w=900&q=90",
         images: [
           "https://images.unsplash.com/photo-1512343879784-a960bf40e7f2?w=600&q=80",
           "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=600&q=80",
@@ -287,16 +294,17 @@ const phases: Phase[] = [
     id: 6,
     name: "Western Ghats Treasures",
     subtitle: "Waterfalls · Rainforests · Coastal Temples",
-    bannerImg: "https://images.unsplash.com/photo-1543158181-e6f9f6712055?w=900&q=80",
+    bannerImg: "https://images.unsplash.com/photo-1543158181-e6f9f6712055?w=900&q=90",
     accent: "#4895ef",
     destinations: [
       {
         name: "Agumbe",
         dist: "350 km from Bengaluru",
-        heroImg: "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=900&q=80",
+        heroImg: "https://images.unsplash.com/photo-1448375240586-882707db888b?w=900&q=90",
         images: [
-          "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=600&q=80",
+          "https://images.unsplash.com/photo-1448375240586-882707db888b?w=600&q=80",
           "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=600&q=80",
+          "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=600&q=80",
         ],
         desc: "The Cherrapunji of the South — the greenest corner of Karnataka with lush rainforests, king cobra territory, and spectacular sunsets over the Arabian Sea. A must for nature purists.",
         highlights: ["Barkana Falls (850ft drop)", "Sunset Point", "King Cobra Research Centre", "Rainforest Treks", "Kunchikal Falls"],
@@ -306,10 +314,11 @@ const phases: Phase[] = [
       {
         name: "Jog Falls",
         dist: "380 km from Bengaluru",
-        heroImg: "https://images.unsplash.com/photo-1543158181-e6f9f6712055?w=900&q=80",
+        heroImg: "https://images.unsplash.com/photo-1543158181-e6f9f6712055?w=900&q=90",
         images: [
           "https://images.unsplash.com/photo-1543158181-e6f9f6712055?w=600&q=80",
           "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=600&q=80",
+          "https://images.unsplash.com/photo-1448375240586-882707db888b?w=600&q=80",
         ],
         desc: "India's second highest waterfall — the Raja, Rani, Rover, and Roarer cascades plunge 253 metres into the gorge below. Best visited during or just after the monsoon for maximum grandeur.",
         highlights: ["Jog Falls (253m drop)", "Linganamakki Dam", "Sharavathi Valley Wildlife Sanctuary", "Gorge Viewpoints", "Nearby Unchalli Falls"],
@@ -319,10 +328,11 @@ const phases: Phase[] = [
       {
         name: "Murudeshwar",
         dist: "480 km from Bengaluru",
-        heroImg: "https://images.unsplash.com/photo-1590574475023-2e8e5efa8f4f?w=900&q=80",
+        heroImg: "https://images.unsplash.com/photo-1566241832378-917a0f30db2a?w=900&q=90",
         images: [
-          "https://images.unsplash.com/photo-1590574475023-2e8e5efa8f4f?w=600&q=80",
+          "https://images.unsplash.com/photo-1566241832378-917a0f30db2a?w=600&q=80",
           "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=600&q=80",
+          "https://images.unsplash.com/photo-1519046904884-53103b34b206?w=600&q=80",
         ],
         desc: "Home to the world's second tallest Shiva statue at 37 metres — standing against the backdrop of the Arabian Sea. The Murudeshwar Temple on a rocky promontory and the crystal-blue waters make this a divine coastal destination.",
         highlights: ["37m Shiva Statue", "Murudeshwar Temple", "Netrani Island Scuba Diving", "Murudeshwar Beach", "RN Shetty Tower Viewpoint"],

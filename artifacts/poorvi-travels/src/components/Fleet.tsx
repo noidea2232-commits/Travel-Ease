@@ -125,7 +125,7 @@ function VehicleCard({ imgKey, alt, name, seats, children }: {
   imgKey: string; alt: string; name: string; seats: string; children: React.ReactNode;
 }) {
   return (
-    <article className="bg-[#0f1e33] border border-[#ffdc8e]/10 hover:border-[#ffdc8e]/30 rounded-xl p-3 relative flex flex-col transition-all duration-200 hover:shadow-lg hover:shadow-black/40">
+    <article className="bg-[#0f1e33] border border-[#ffdc8e]/10 hover:border-[#ffdc8e]/40 rounded-xl p-3 relative flex flex-col transition-all duration-300 hover:shadow-xl hover:shadow-black/50 hover:-translate-y-1 active:scale-[0.98]">
       <AcBadge />
       <VehicleImage imgKey={imgKey} alt={alt} />
       <h3 className="text-center font-black text-white text-xs sm:text-sm uppercase tracking-wide leading-tight">
@@ -144,10 +144,10 @@ export default function Fleet() {
   const [tab, setTab] = useState<Tab>("airport");
 
   const tabCls = (t: Tab) =>
-    `flex items-center gap-1.5 px-4 sm:px-6 py-2.5 text-xs sm:text-sm font-bold transition-all focus:outline-none ${
+    `flex items-center gap-1.5 px-3 sm:px-6 py-2.5 text-[11px] sm:text-sm font-bold transition-all duration-200 focus:outline-none ${
       tab === t
         ? "bg-[#ffdc8e] text-[#3f2e00]"
-        : "bg-[#111c2d] text-[#d0c5b3] hover:text-white"
+        : "bg-[#111c2d] text-[#d0c5b3] hover:text-white hover:bg-[#182640]"
     }`;
 
   return (
@@ -184,7 +184,7 @@ export default function Fleet() {
 
         {/* Airport Taxi */}
         {tab === "airport" && (
-          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
             {airportTaxi.map((v, i) => (
               <VehicleCard key={i} imgKey={v.imgKey} alt={`${v.name} airport taxi Bengaluru`} name={v.name} seats={v.seats}>
                 <div className="text-center mt-2">
@@ -197,7 +197,7 @@ export default function Fleet() {
                   </span>
                   <span>{v.km}</span>
                 </div>
-                <CardButtons waMsg={`Hi! I want to book an Airport Taxi — ${v.name} (${v.seats}) at ₹${v.price}. Please confirm availability. Contact: Poorvi Best Travels 099027 27466`} />
+                <CardButtons waMsg={`Hi! I'd like to book an Airport Taxi with Poorvi Best Travels.\n\n🚗 Vehicle: ${v.name} (${v.seats} seater)\n💰 Rate: ₹${v.price}\n\n📍 Pickup Location: [Please fill]\n✈️ Flight No. / Arrival Time: [Please fill]\n📅 Date: [Please fill]\n👥 No. of Passengers: [Please fill]\n\nKindly confirm availability. Thank you!\n📞 099027 27466`} />
               </VehicleCard>
             ))}
           </div>
@@ -205,7 +205,7 @@ export default function Fleet() {
 
         {/* Outstation */}
         {tab === "outstation" && (
-          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
             {outstation.map((v, i) => (
               <VehicleCard key={i} imgKey={v.imgKey} alt={`${v.name} outstation cab Bengaluru`} name={v.name} seats={v.seats}>
                 <div className="text-center mt-2">
@@ -213,7 +213,7 @@ export default function Fleet() {
                 </div>
                 <p className="text-center text-xs text-[#d0c5b3] mt-0.5">Driver bata: ₹{v.bata}</p>
                 <p className="text-center text-[10px] text-[#8a9ab0] mt-0.5">Toll &amp; Parking Extra</p>
-                <CardButtons waMsg={`Hi! I want to book an Outstation cab — ${v.name} (${v.seats}) at ₹${v.rate}/km. Please confirm availability. Contact: Poorvi Best Travels 099027 27466`} />
+                <CardButtons waMsg={`Hi! I'd like to book an Outstation cab with Poorvi Best Travels.\n\n🚗 Vehicle: ${v.name} (${v.seats} seater)\n💰 Rate: ₹${v.rate}/km + Driver Bata ₹${v.bata}\n\n📍 From (Bengaluru area): [Please fill]\n📍 To (Destination): [Please fill]\n📅 Travel Date: [Please fill]\n↩️ Return Trip: Yes / No\n👥 No. of Passengers: [Please fill]\n\nToll & Parking charges extra. Please confirm availability. Thank you!\n📞 099027 27466`} />
               </VehicleCard>
             ))}
           </div>
@@ -221,7 +221,7 @@ export default function Fleet() {
 
         {/* Local */}
         {tab === "local" && (
-          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
             {local.map((v, i) => (
               <VehicleCard key={i} imgKey={v.imgKey} alt={`${v.name} local city cab Bengaluru`} name={v.name} seats={v.seats}>
                 <div className="text-center mt-2 leading-snug">
@@ -229,7 +229,7 @@ export default function Fleet() {
                   <span className="text-[#ffdc8e] font-bold text-xl">₹ {v.price}</span>
                 </div>
                 <p className="text-center text-[10px] text-[#8a9ab0] mt-0.5">Toll &amp; Parking Extra</p>
-                <CardButtons waMsg={`Hi! I want to book a Local cab — ${v.name} (${v.seats}), ${v.pkg} package at ₹${v.price}. Please confirm availability. Contact: Poorvi Best Travels 099027 27466`} />
+                <CardButtons waMsg={`Hi! I'd like to book a Local cab with Poorvi Best Travels.\n\n🚗 Vehicle: ${v.name} (${v.seats} seater)\n📦 Package: ${v.pkg} A/C\n💰 Rate: ₹${v.price}\n\n📍 Pickup Location: [Please fill]\n📅 Date: [Please fill]\n🕐 Start Time: [Please fill]\n👥 No. of Passengers: [Please fill]\n\nToll & Parking charges extra. Please confirm availability. Thank you!\n📞 099027 27466`} />
               </VehicleCard>
             ))}
           </div>
