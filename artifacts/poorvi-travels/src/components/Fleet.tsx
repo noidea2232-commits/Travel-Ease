@@ -1,61 +1,31 @@
 import { useState } from "react";
 import { Plane, Car, Clock } from "lucide-react";
 
+import imgHatchback    from "@assets/image_1779029263723.png";
+import imgSedan        from "@assets/image_1779029281791.png";
+import imgSedanPrime   from "@assets/image_1779029297172.png";
+import imgErtiga       from "@assets/image_1779029306486.png";
+import imgInnova       from "@assets/image_1779029319947.png";
+import imgInnovaCrysta from "@assets/image_1779029330191.png";
+import imgHycross      from "@assets/image_1779029344124.png";
+import imgFortune      from "@assets/image_1779029359005.png";
+import imgTempo        from "@assets/image_1779029372201.png";
+import imgUrbania      from "@assets/image_1779029388859.png";
+
 const WA_BASE = "https://wa.me/919902727466";
 
-/* ─────────────────────────────────────────────────────────────────────────────
-   Clean white-background vehicle images sourced from Wikipedia Commons /
-   public CDNs — presented with object-contain so they look like product shots.
-───────────────────────────────────────────────────────────────────────────── */
-const IMG = {
-  /* Hatchback — Maruti Swift side view */
-  hatchback:
-    "https://upload.wikimedia.org/wikipedia/commons/thumb/6/64/MARUTI_SUZUKI_SWIFT_VXIVS_2018.jpg/320px-MARUTI_SUZUKI_SWIFT_VXIVS_2018.jpg",
-  /* Sedan — Toyota Etios / Dzire */
-  sedan:
-    "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/2012_Toyota_Etios_sedan_%28Australia%29%2C_front_8.15.17.jpg/320px-2012_Toyota_Etios_sedan_%28Australia%29%2C_front_8.15.17.jpg",
-  /* Prime Sedan — Honda City / Verna */
-  sedanPrime:
-    "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/Honda-city-2020.jpg/320px-Honda-city-2020.jpg",
-  /* Ertiga — Maruti Suzuki Ertiga */
-  ertiga:
-    "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8c/2019_Maruti_Suzuki_Ertiga.jpg/320px-2019_Maruti_Suzuki_Ertiga.jpg",
-  /* Innova */
-  innova:
-    "https://upload.wikimedia.org/wikipedia/commons/thumb/b/be/Toyota_Innova_Crysta_2.4_G_AT_%28facelift%2C_silver%29%2C_front_8.30.19.jpg/320px-Toyota_Innova_Crysta_2.4_G_AT_%28facelift%2C_silver%29%2C_front_8.30.19.jpg",
-  /* Innova Crysta */
-  innovaCrysta:
-    "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fc/Toyota_Innova_Crysta_2.4_V_AT_%28facelift%29%2C_front_8.15.19.jpg/320px-Toyota_Innova_Crysta_2.4_V_AT_%28facelift%29%2C_front_8.15.19.jpg",
-  /* Hycross / Hycross Sunroof */
-  hycross:
-    "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/2022_Toyota_Innova_Zenix_%28Indonesia%2C_gasoline_variant%29.jpg/320px-2022_Toyota_Innova_Zenix_%28Indonesia%2C_gasoline_variant%29.jpg",
-  /* Fortuner */
-  fortuner:
-    "https://upload.wikimedia.org/wikipedia/commons/thumb/2/23/Toyota_Fortuner_2020_-_Front.jpg/320px-Toyota_Fortuner_2020_-_Front.jpg",
-  /* Tempo Traveller */
-  tempo:
-    "https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/Force_Traveller_%28facelift%29_at_the_2016_Auto_Expo.jpg/320px-Force_Traveller_%28facelift%29_at_the_2016_Auto_Expo.jpg",
-  /* Urbania 16-seater */
-  urbania:
-    "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b5/Force_Urbania_2022.jpg/320px-Force_Urbania_2022.jpg",
-  /* Mini Bus */
-  minibus:
-    "https://images.unsplash.com/photo-1567443024551-f3e3cc2be870?w=400&q=80",
-};
-
-/* Fallback for any broken Wikipedia image */
-const FALLBACK: Record<string, string> = {
-  hatchback:   "https://images.unsplash.com/photo-1541899481282-d53bffe3c35d?w=400&q=80",
-  sedan:       "https://images.unsplash.com/photo-1494976388531-d1058494cdd8?w=400&q=80",
-  sedanPrime:  "https://images.unsplash.com/photo-1549317661-bd32c8ce0db2?w=400&q=80",
-  ertiga:      "https://images.unsplash.com/photo-1503376780353-7e6692767b70?w=400&q=80",
-  innova:      "https://images.unsplash.com/photo-1519641471654-76ce0107ad1b?w=400&q=80",
-  innovaCrysta:"https://images.unsplash.com/photo-1533473359331-0135ef1b58bf?w=400&q=80",
-  hycross:     "https://images.unsplash.com/photo-1542362567-b07e54358753?w=400&q=80",
-  fortuner:    "https://images.unsplash.com/photo-1502877338535-766e1452684a?w=400&q=80",
-  tempo:       "https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?w=400&q=80",
-  urbania:     "https://images.unsplash.com/photo-1570125909232-eb263c188f7e?w=400&q=80",
-  minibus:     "https://images.unsplash.com/photo-1567443024551-f3e3cc2be870?w=400&q=80",
+const IMG: Record<string, string> = {
+  hatchback:    imgHatchback,
+  sedan:        imgSedan,
+  sedanPrime:   imgSedanPrime,
+  ertiga:       imgErtiga,
+  innova:       imgInnova,
+  innovaCrysta: imgInnovaCrysta,
+  hycross:      imgHycross,
+  fortuner:     imgFortune,
+  tempo:        imgTempo,
+  urbania:      imgUrbania,
+  minibus:      imgUrbania,
 };
 
 /* ── Data ─────────────────────────────────────────────────────────────────── */
@@ -109,17 +79,12 @@ function VehicleImage({ imgKey, alt }: { imgKey: string; alt: string }) {
   return (
     <div className="w-full h-28 bg-white rounded flex items-center justify-center overflow-hidden mb-3">
       <img
-        src={IMG[imgKey as keyof typeof IMG]}
+        src={IMG[imgKey]}
         alt={alt}
         className="max-h-24 max-w-full object-contain"
         loading="lazy"
         width="180"
         height="96"
-        onError={(e) => {
-          const t = e.currentTarget;
-          const fb = FALLBACK[imgKey];
-          if (fb && t.src !== fb) t.src = fb;
-        }}
       />
     </div>
   );

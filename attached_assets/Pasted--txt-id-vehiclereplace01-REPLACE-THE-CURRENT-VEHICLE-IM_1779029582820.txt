@@ -1,0 +1,164 @@
+```txt id="vehiclereplace01"
+REPLACE THE CURRENT VEHICLE IMAGES WITH THESE EXACT VEHICLE MODELS IN THE SAME ORDER.
+
+==================================================
+1ST CARD — HATCHBACK (3+1)
+==================================================
+
+Replace current image with:
+White Volkswagen Polo PNG side view
+
+Image filename:
+hatchback.png
+
+==================================================
+2ND CARD — SEDAN (4+1)
+==================================================
+
+Replace current image with:
+White Toyota Etios PNG side view
+
+Image filename:
+sedan.png
+
+==================================================
+3RD CARD — PRIME SEDAN (4+1)
+==================================================
+
+Replace current image with:
+White Honda City PNG side view
+
+Image filename:
+prime-sedan.png
+
+==================================================
+4TH CARD — SUV ERTIGA (6+1)
+==================================================
+
+Replace current image with:
+White Maruti Suzuki Ertiga PNG side view
+
+Image filename:
+ertiga.png
+
+==================================================
+5TH CARD — INNOVA (7+1)
+==================================================
+
+Replace current image with:
+White Toyota Innova PNG side view
+
+Image filename:
+innova.png
+
+==================================================
+6TH CARD — INNOVA CRYSTA (7+1)
+==================================================
+
+Replace current image with:
+White Toyota Innova Crysta PNG side view
+
+Image filename:
+crysta.png
+
+==================================================
+7TH CARD — INNOVA HYCROSS (7+1)
+==================================================
+
+Replace current image with:
+White Toyota Hycross PNG side view
+
+Image filename:
+hycross.png
+
+==================================================
+8TH CARD — HYCROSS SUNROOF (7+1)
+==================================================
+
+Replace current image with:
+White Toyota Hycross Top Model PNG side view
+
+Image filename:
+hycross-sunroof.png
+
+==================================================
+9TH CARD — TOYOTA FORTUNER (7+1)
+==================================================
+
+Replace current image with:
+White Toyota Fortuner PNG side view
+
+Image filename:
+fortuner.png
+
+==================================================
+10TH CARD — TEMPO TRAVELLER (12+1)
+==================================================
+
+Replace current image with:
+White Tempo Traveller PNG side view
+
+Image filename:
+traveller.png
+
+==================================================
+11TH CARD — URBANIA (16+1)
+==================================================
+
+Replace current image with:
+White Force Urbania PNG side view
+
+Image filename:
+urbania.png
+
+==================================================
+12TH CARD — MINI BUS (21+1)
+==================================================
+
+Replace current image with:
+White Mini Tourist Bus PNG side view
+
+Image filename:
+minibus.png
+
+==================================================
+IMPORTANT IMAGE STYLE RULES
+==================================================
+
+ALL images must:
+- Have white or transparent background
+- Be side-view or 3/4 side-view
+- Match same visual style
+- Match same lighting
+- Match same proportions
+- Match same sizing
+- Look like airport taxi website images
+
+==================================================
+REMOVE THESE TYPES
+==================================================
+
+Remove:
+- Sports car images
+- BMW showcase images
+- Outdoor random photos
+- Dark cinematic images
+- Luxury dealership style visuals
+- Inconsistent image angles
+
+==================================================
+FINAL GOAL
+==================================================
+
+The final vehicle section should look:
+- Clean
+- Professional
+- Consistent
+- Airport taxi booking style
+- Similar to Shiva Airport Taxi website
+
+NOT like:
+- Car showroom
+- Luxury automobile website
+- Sports car gallery
+```
