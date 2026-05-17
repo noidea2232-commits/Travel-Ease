@@ -5,7 +5,6 @@ import { TooltipProvider } from "@/components/ui/tooltip";
 import NotFound from "@/pages/not-found";
 import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
-import Services from "@/components/Services";
 import Fleet from "@/components/Fleet";
 import WhyUs from "@/components/WhyUs";
 import Reviews from "@/components/Reviews";
@@ -22,7 +21,6 @@ function Home() {
       <Navbar />
       <main>
         <Hero />
-        <Services />
         <Fleet />
         <WhyUs />
         <Tourism />

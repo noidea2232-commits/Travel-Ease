@@ -4,7 +4,6 @@ import logoPath from "@assets/WhatsApp_Image_2026-05-16_at_5.56.15_PM_1779026878
 
 const navLinks = [
   { label: "Home", href: "#home" },
-  { label: "Services", href: "#services" },
   { label: "Fleet", href: "#fleet" },
   { label: "Tourism", href: "#tourism" },
   { label: "Reviews", href: "#reviews" },
