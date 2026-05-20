@@ -42,48 +42,47 @@ const reasons = [
 
 export default function WhyUs() {
   return (
-    <section className="py-20 lg:py-28 bg-[#081425]" aria-labelledby="why-us-heading">
+    <section className="py-20 lg:py-28 bg-white" aria-labelledby="why-us-heading">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
-        {/* Stats bar */}
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-20">
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-4 sm:gap-5 mb-16 sm:mb-20">
           {stats.map((stat, i) => (
             <div
               key={i}
-              className="bg-[#111c2d] border border-[#ffdc8e]/10 rounded-2xl p-6 text-center"
+              className="bg-[#faf8f3] border border-[#e8e2d4] rounded-2xl p-5 sm:p-6 text-center luxury-shadow hover:luxury-shadow-lg transition-shadow"
               data-testid={`stat-card-${i}`}
             >
-              <div className="text-3xl md:text-4xl font-bold text-[#ffdc8e] font-serif mb-1">{stat.value}</div>
-              <div className="text-white text-sm font-semibold">{stat.label}</div>
-              <div className="text-[#d0c5b3] text-xs mt-0.5">{stat.sub}</div>
+              <div className="text-3xl md:text-4xl font-bold gold-gradient-text font-serif mb-1">{stat.value}</div>
+              <div className="text-[#1c1c1c] text-sm font-semibold">{stat.label}</div>
+              <div className="text-[#5c5c5c] text-xs mt-0.5">{stat.sub}</div>
             </div>
           ))}
         </div>
 
         <div className="text-center mb-14">
-          <span className="text-[#ffdc8e] text-xs font-bold uppercase tracking-widest block mb-3">
+          <span className="text-[#8b6914] text-xs font-bold uppercase tracking-widest block mb-3">
             Why Choose Us
           </span>
-          <h2 id="why-us-heading" className="font-serif text-3xl md:text-4xl font-bold text-white mb-4">
+          <h2 id="why-us-heading" className="font-serif text-3xl md:text-4xl font-bold text-[#1c1c1c] mb-4">
             Bengaluru's Most Trusted Travel Partner
           </h2>
-          <p className="text-[#d0c5b3] max-w-xl mx-auto text-base">
+          <p className="text-[#5c5c5c] max-w-xl mx-auto text-base">
             Hundreds of happy customers across Bengaluru choose Poorvi Best Travels for every kind of journey — here's why.
           </p>
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 sm:gap-6">
           {reasons.map((reason, index) => (
             <div
               key={index}
-              className="bg-[#111c2d] border border-[#4d4638]/50 hover:border-[#ffdc8e]/20 rounded-2xl p-6 transition-all duration-300 hover:shadow-lg hover:shadow-black/20 group"
+              className="bg-white border border-[#e8e2d4] hover:border-[#c9a227]/40 rounded-2xl p-6 transition-all duration-300 luxury-shadow hover:luxury-shadow-lg group"
               data-testid={`why-us-card-${index}`}
             >
-              <div className="w-12 h-12 rounded-xl bg-[#ffdc8e]/10 border border-[#ffdc8e]/20 flex items-center justify-center text-[#ffdc8e] mb-5 group-hover:bg-[#ffdc8e]/15 transition-colors">
+              <div className="w-12 h-12 rounded-xl bg-[#faf8f3] border border-[#c9a227]/25 flex items-center justify-center text-[#8b6914] mb-5 group-hover:bg-[#f5e6b8]/30 transition-colors">
                 {reason.icon}
               </div>
-              <h3 className="text-white font-semibold text-lg mb-2">{reason.title}</h3>
-              <p className="text-[#d0c5b3] text-sm leading-relaxed">{reason.description}</p>
+              <h3 className="text-[#1c1c1c] font-semibold text-lg mb-2">{reason.title}</h3>
+              <p className="text-[#5c5c5c] text-sm leading-relaxed">{reason.description}</p>
             </div>
           ))}
         </div>

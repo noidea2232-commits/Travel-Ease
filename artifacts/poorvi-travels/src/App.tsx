@@ -17,7 +17,7 @@ const queryClient = new QueryClient();
 
 function Home() {
   return (
-    <div className="bg-[#081425] min-h-screen overflow-x-hidden">
+    <div className="bg-[#fffcf7] min-h-screen overflow-x-hidden">
       <Navbar />
       <main>
         <Hero />

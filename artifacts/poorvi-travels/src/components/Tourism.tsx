@@ -1,5 +1,8 @@
 import { useState } from "react";
 import { X, MapPin, Clock, Car, ChevronRight } from "lucide-react";
+import imgMunnar from "@assets/tourism/munnar.png";
+import imgJogFalls from "@assets/tourism/jog-falls.png";
+import imgKeralaTrip from "@assets/hero/hero-01.png";
 
 const WA = "https://wa.me/919902727466";
 
@@ -177,9 +180,9 @@ const phases: Phase[] = [
   },
   {
     id: 4,
-    name: "Kerala Circuit",
+    name: "Kerala Trip",
     subtitle: "Backwaters · Tea Hills · Spice Forests",
-    bannerImg: "https://images.unsplash.com/photo-1602216056096-3b40cc0c9944?w=900&q=90",
+    bannerImg: imgKeralaTrip,
     accent: "#2a9d8f",
     destinations: [
       {
@@ -199,9 +202,9 @@ const phases: Phase[] = [
       {
         name: "Munnar",
         dist: "465 km from Bengaluru",
-        heroImg: "https://images.unsplash.com/photo-1605540436563-5bca919ae766?w=900&q=90",
+        heroImg: imgMunnar,
         images: [
-          "https://images.unsplash.com/photo-1605540436563-5bca919ae766?w=600&q=80",
+          imgMunnar,
           "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=600&q=80",
           "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=600&q=80",
         ],
@@ -294,7 +297,7 @@ const phases: Phase[] = [
     id: 6,
     name: "Western Ghats Treasures",
     subtitle: "Waterfalls · Rainforests · Coastal Temples",
-    bannerImg: "https://images.unsplash.com/photo-1543158181-e6f9f6712055?w=900&q=90",
+    bannerImg: imgJogFalls,
     accent: "#4895ef",
     destinations: [
       {
@@ -314,9 +317,9 @@ const phases: Phase[] = [
       {
         name: "Jog Falls",
         dist: "380 km from Bengaluru",
-        heroImg: "https://images.unsplash.com/photo-1543158181-e6f9f6712055?w=900&q=90",
+        heroImg: imgJogFalls,
         images: [
-          "https://images.unsplash.com/photo-1543158181-e6f9f6712055?w=600&q=80",
+          imgJogFalls,
           "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=600&q=80",
           "https://images.unsplash.com/photo-1448375240586-882707db888b?w=600&q=80",
         ],
@@ -563,18 +566,18 @@ export default function Tourism() {
   const [selectedPhase, setSelectedPhase] = useState<Phase | null>(null);
 
   return (
-    <section id="tourism" className="py-20 bg-[#081425]" aria-labelledby="tourism-heading">
+    <section id="tourism" className="py-20 lg:py-28 bg-white" aria-labelledby="tourism-heading">
       <div className="max-w-6xl mx-auto px-4">
 
         {/* Heading */}
         <div className="text-center mb-14">
-          <span className="text-[#ffdc8e] text-xs font-bold uppercase tracking-widest block mb-3">
+          <span className="text-[#8b6914] text-xs font-bold uppercase tracking-widest block mb-3">
             Explore Karnataka &amp; Beyond
           </span>
-          <h2 id="tourism-heading" className="font-serif text-3xl md:text-4xl font-bold text-white mb-4">
+          <h2 id="tourism-heading" className="font-serif text-3xl md:text-4xl font-bold text-[#1c1c1c] mb-4">
             Curated Tourism Packages
           </h2>
-          <p className="text-[#d0c5b3] max-w-xl mx-auto text-sm">
+          <p className="text-[#5c5c5c] max-w-xl mx-auto text-sm">
             19 handpicked destinations across 6 tour themes. Click any phase to explore destinations, highlights, and book your trip instantly via WhatsApp.
           </p>
         </div>
@@ -584,7 +587,7 @@ export default function Tourism() {
           {phases.map((phase) => (
             <article
               key={phase.id}
-              className="relative rounded-2xl overflow-hidden cursor-pointer group border border-white/5 hover:border-[#ffdc8e]/30 transition-all duration-300 hover:shadow-2xl hover:shadow-black/50 hover:-translate-y-1"
+              className="relative rounded-2xl overflow-hidden cursor-pointer group border border-[#e8e2d4] hover:border-[#c9a227]/40 transition-all duration-300 luxury-shadow hover:luxury-shadow-lg hover:-translate-y-1"
               onClick={() => setSelectedPhase(phase)}
               role="button"
               tabIndex={0}
@@ -599,7 +602,7 @@ export default function Tourism() {
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
                   loading="lazy"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-[#081425] via-black/50 to-black/10" />
+                <div className="absolute inset-0 bg-gradient-to-t from-[#1c1c1c]/80 via-black/40 to-black/10" />
 
                 {/* Phase number badge */}
                 <div
@@ -616,9 +619,9 @@ export default function Tourism() {
               </div>
 
               {/* Card body */}
-              <div className="bg-[#111c2d] p-5">
-                <h3 className="font-serif text-lg font-bold text-white mb-1">{phase.name}</h3>
-                <p className="text-xs text-[#d0c5b3] mb-4">{phase.subtitle}</p>
+              <div className="bg-white p-5 border-t border-[#e8e2d4]">
+                <h3 className="font-serif text-lg font-bold text-[#1c1c1c] mb-1">{phase.name}</h3>
+                <p className="text-xs text-[#5c5c5c] mb-4">{phase.subtitle}</p>
 
                 {/* Destination pills */}
                 <div className="flex flex-wrap gap-1.5 mb-4">
@@ -638,7 +641,7 @@ export default function Tourism() {
                 </div>
 
                 <button
-                  className="w-full flex items-center justify-center gap-2 py-2.5 rounded-xl border font-bold text-sm transition-all group-hover:bg-[#ffdc8e] group-hover:text-[#3f2e00] group-hover:border-[#ffdc8e]"
+                  className="w-full flex items-center justify-center gap-2 py-2.5 rounded-xl border font-bold text-sm transition-all group-hover:bg-gradient-to-r group-hover:from-[#f5e6b8] group-hover:via-[#d4af37] group-hover:to-[#c9a227] group-hover:text-[#3f2e00] group-hover:border-[#c9a227]"
                   style={{ borderColor: phase.accent + "60", color: phase.accent }}
                   tabIndex={-1}
                 >
@@ -650,16 +653,16 @@ export default function Tourism() {
         </div>
 
         {/* Bottom CTA */}
-        <div className="mt-14 bg-[#111c2d] border border-[#ffdc8e]/10 rounded-2xl p-7 text-center">
-          <h3 className="font-serif text-xl font-semibold text-white mb-2">Want a Custom Tour?</h3>
-          <p className="text-[#d0c5b3] text-sm mb-6 max-w-md mx-auto">
+        <div className="mt-14 bg-[#faf8f3] border border-[#e8e2d4] rounded-2xl p-7 text-center luxury-shadow-lg">
+          <h3 className="font-serif text-xl font-semibold text-[#1c1c1c] mb-2">Want a Custom Tour?</h3>
+          <p className="text-[#5c5c5c] text-sm mb-6 max-w-md mx-auto">
             Tell us your group size, dates, and dream destination — we'll craft a custom itinerary and quote just for you.
           </p>
           <a
             href={`${WA}?text=${encodeURIComponent("Hi! I want to plan a custom outstation trip with Poorvi Best Travels. Please help me with an itinerary.")}`}
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 bg-gradient-to-r from-[#ffdc8e] to-[#e3c06f] text-[#3f2e00] px-8 py-4 rounded-xl font-black text-sm uppercase tracking-widest hover:brightness-110 transition-all"
+            className="inline-flex items-center gap-2 gold-gradient-bg text-[#3f2e00] px-8 py-4 rounded-xl font-black text-sm uppercase tracking-widest hover:brightness-110 transition-all luxury-shadow"
           >
             Plan Custom Trip
           </a>

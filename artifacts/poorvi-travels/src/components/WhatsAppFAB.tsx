@@ -5,7 +5,7 @@ export default function WhatsAppFAB() {
       {/* Call Us Button */}
       <a
         href="tel:+919902727466"
-        className="flex items-center justify-center w-13 h-13 w-[52px] h-[52px] rounded-full bg-[#1a73e8] hover:bg-[#1558b0] text-white shadow-xl shadow-blue-500/30 transition-all hover:scale-105 active:scale-95"
+        className="flex items-center justify-center w-[52px] h-[52px] rounded-full bg-[#1c1c1c] hover:bg-[#2a2a2a] text-[#f5e6b8] border border-[#c9a227]/30 shadow-xl shadow-black/20 transition-all hover:scale-105 active:scale-95"
         aria-label="Call Poorvi Best Travels at 099027 27466"
         data-testid="call-fab"
         title="Call us: 099027 27466"
