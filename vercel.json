@@ -1,0 +1,35 @@
+{
+  "version": 2,
+  "buildCommand": "pnpm install && pnpm run build",
+  "installCommand": "pnpm install --frozen-lockfile",
+  "env": {
+    "NODE_ENV": "production"
+  },
+  "functions": {
+    "artifacts/api-server/**/*.ts": {
+      "runtime": "nodejs20.x",
+      "memory": 1024
+    }
+  },
+  "rewrites": [
+    {
+      "source": "/api/(.*)",
+      "destination": "/artifacts/api-server/src/index.ts"
+    },
+    {
+      "source": "/(.*)",
+      "destination": "/artifacts/poorvi-travels/dist/public/index.html"
+    }
+  ],
+  "headers": [
+    {
+      "source": "/(.*)",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=31536000, immutable"
+        }
+      ]
+    }
+  ]
+}
