@@ -1,5 +1,5 @@
 import { Phone, MapPin, Clock, MessageCircle } from "lucide-react";
-import logoPath from "@assets/WhatsApp_Image_2026-05-16_at_5.56.15_PM_1779026878315.jpeg";
+import { BrandMark } from "@/components/brand";
 
 const quickLinks = [
   { label: "Home", href: "#home" },
@@ -32,13 +32,7 @@ export default function Footer() {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10">
 
           <div className="sm:col-span-2 lg:col-span-1">
-            <img
-              src={logoPath}
-              alt="Poorvi Best Travels Logo"
-              className="h-16 w-auto object-contain mb-4 brightness-110"
-              width="140"
-              height="64"
-            />
+            <BrandMark variant="footer" className="mb-4" logoEntrance />
             <p className="text-[#e8e2d4]/80 text-sm leading-relaxed mb-5">
               Your most trusted travel partner in Bengaluru. Car rental, outstation trips, city rides, and group travel — all vehicle types available.
             </p>

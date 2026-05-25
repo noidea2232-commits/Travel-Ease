@@ -3,6 +3,7 @@
  * ─────────────────────────────────────────────────────────────────
  * Replace images in `attached_assets/hero/` (hero-01.png … hero-10.png)
  */
+import { BRAND_LOGO } from "@/config/brand";
 import hero01 from "@assets/hero/hero-01.png";
 import hero02 from "@assets/hero/hero-02.png";
 import hero03 from "@assets/hero/hero-03.png";
@@ -17,9 +18,12 @@ import hero10 from "@assets/hero/hero-10.png";
 export interface HeroSlide {
   src: string;
   alt: string;
+  /** Brand logo splash — shown first for HERO_LOGO_INTRO_MS, then carousel continues */
+  isBrandLogo?: boolean;
 }
 
 export const HERO_SLIDES: HeroSlide[] = [
+  { src: BRAND_LOGO, alt: "Poorvi Best Travels — premium taxi and travel services", isBrandLogo: true },
   { src: hero01, alt: "Kerala backwaters houseboat — premium trip" },
   { src: hero02, alt: "Mysore Palace illuminated at night" },
   { src: hero03, alt: "Airport terminal and aircraft at dusk" },

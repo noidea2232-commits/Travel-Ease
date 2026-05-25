@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { Menu, X, Phone } from "lucide-react";
-import logoPath from "@assets/WhatsApp_Image_2026-05-16_at_5.56.15_PM_1779026878315.jpeg";
+import { BrandMark } from "@/components/brand";
+import { BRAND_NAME } from "@/config/brand";
 
 const navLinks = [
   { label: "Home", href: "#home" },
@@ -30,56 +31,36 @@ export default function Navbar() {
     <header
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
         scrolled
-          ? "bg-white/95 backdrop-blur-md shadow-md shadow-[#c9a227]/10 border-b border-[#e8e2d4]"
-          : "bg-transparent"
+          ? "bg-[#fffcf7]/95 backdrop-blur-md shadow-md shadow-[#0c1424]/8 border-b border-[#e8e2d4]/90"
+          : "bg-gradient-to-b from-[#0c1424]/55 via-[#0c1424]/20 to-transparent"
       }`}
     >
-      <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8" aria-label="Main navigation">
-        <div className="flex items-center justify-between h-16 md:h-20">
+      <nav className="max-w-7xl mx-auto px-3 sm:px-6 lg:px-8" aria-label="Main navigation">
+        <div className="flex items-center justify-between gap-3 h-16 md:h-20">
           <a
             href="#home"
-            onClick={(e) => { e.preventDefault(); handleNavClick("#home"); }}
-            className="flex items-center gap-2.5 sm:gap-3 flex-shrink-0 min-w-0"
-            aria-label="Poorvi Best Travels - Home"
+            onClick={(e) => {
+              e.preventDefault();
+              handleNavClick("#home");
+            }}
+            className="group flex min-w-0 flex-1 items-center max-w-[calc(100%-3.25rem)] min-[400px]:max-w-[calc(100%-3.75rem)] sm:max-w-[calc(100%-10.5rem)] md:max-w-[min(46%,340px)] lg:max-w-[400px] rounded-lg outline-none focus-visible:ring-2 focus-visible:ring-[#c9a227]/50"
+            aria-label={`${BRAND_NAME} - Home`}
           >
-            <img
-              src={logoPath}
-              alt="Poorvi Best Travels Logo"
-              className="h-9 sm:h-10 md:h-12 w-auto object-contain flex-shrink-0"
-              width="120"
-              height="56"
+            <BrandMark
+              variant={scrolled ? "navbar-scrolled" : "navbar-hero"}
+              logoEntrance
             />
-            <div className="hidden sm:flex flex-col min-w-0 leading-tight border-l border-[#c9a227]/30 pl-2.5 sm:pl-3">
-              <span
-                className={`font-serif font-bold text-[11px] sm:text-sm md:text-base tracking-wide uppercase truncate ${
-                  scrolled ? "gold-gradient-text" : "text-white drop-shadow-sm"
-                }`}
-              >
-                POORVI BEST TRAVELS
-              </span>
-              <span
-                className={`text-[9px] sm:text-[10px] font-semibold uppercase tracking-[0.18em] truncate ${
-                  scrolled ? "text-[#8b6914]/80" : "text-[#f5e6b8]/90"
-                }`}
-              >
-                Premium Airport Taxi
-              </span>
-            </div>
-            <span
-              className={`font-serif font-bold text-[10px] sm:hidden uppercase tracking-wide max-w-[120px] truncate ${
-                scrolled ? "gold-gradient-text" : "text-white"
-              }`}
-            >
-              POORVI BEST TRAVELS
-            </span>
           </a>
 
-          <div className="hidden md:flex items-center gap-8">
+          <div className="hidden md:flex items-center gap-7 lg:gap-8 flex-shrink-0">
             {navLinks.map((link) => (
               <a
                 key={link.href}
                 href={link.href}
-                onClick={(e) => { e.preventDefault(); handleNavClick(link.href); }}
+                onClick={(e) => {
+                  e.preventDefault();
+                  handleNavClick(link.href);
+                }}
                 className={`text-sm font-semibold transition-colors duration-200 uppercase tracking-wider ${
                   scrolled ? "text-[#5c5c5c] hover:text-[#8b6914]" : "text-white/90 hover:text-[#f5e6b8]"
                 }`}
@@ -90,7 +71,7 @@ export default function Navbar() {
             ))}
           </div>
 
-          <div className="flex items-center gap-3">
+          <div className="flex items-center gap-2 sm:gap-3 flex-shrink-0">
             <a
               href="tel:+919902727466"
               className={`hidden sm:flex items-center gap-2 text-sm font-semibold transition-colors ${
@@ -98,20 +79,23 @@ export default function Navbar() {
               }`}
               data-testid="nav-phone"
             >
-              <Phone size={16} />
-              <span>099027 27466</span>
+              <Phone size={16} aria-hidden />
+              <span className="hidden lg:inline">099027 27466</span>
             </a>
             <a
               href="https://wa.me/919902727466"
               target="_blank"
               rel="noopener noreferrer"
-              className="gold-gradient-bg text-[#3f2e00] px-5 py-2 rounded-lg text-xs font-bold uppercase tracking-widest hover:brightness-110 transition-all hidden md:block luxury-shadow"
+              className="gold-gradient-bg text-[#3f2e00] px-4 sm:px-5 py-2 rounded-lg text-[10px] sm:text-xs font-bold uppercase tracking-widest hover:brightness-110 transition-all hidden md:block luxury-shadow"
               data-testid="nav-book-now"
             >
               Book Now
             </a>
             <button
-              className={`md:hidden p-2 ${scrolled ? "text-[#8b6914]" : "text-[#f5e6b8]"}`}
+              type="button"
+              className={`md:hidden p-2 flex-shrink-0 rounded-lg transition-colors ${
+                scrolled ? "text-[#8b6914] hover:bg-[#faf8f3]" : "text-[#f5e6b8] hover:bg-white/10"
+              }`}
               onClick={() => setMobileOpen(!mobileOpen)}
               aria-label={mobileOpen ? "Close menu" : "Open menu"}
               aria-expanded={mobileOpen}
@@ -123,13 +107,16 @@ export default function Navbar() {
         </div>
 
         {mobileOpen && (
-          <div className="md:hidden bg-white/98 backdrop-blur-md border-t border-[#e8e2d4] pb-6 pt-4 luxury-shadow">
+          <div className="md:hidden bg-[#fffcf7]/98 backdrop-blur-md border-t border-[#e8e2d4] pb-6 pt-4 luxury-shadow">
             <div className="flex flex-col gap-1">
               {navLinks.map((link) => (
                 <a
                   key={link.href}
                   href={link.href}
-                  onClick={(e) => { e.preventDefault(); handleNavClick(link.href); }}
+                  onClick={(e) => {
+                    e.preventDefault();
+                    handleNavClick(link.href);
+                  }}
                   className="text-sm font-semibold text-[#5c5c5c] hover:text-[#8b6914] hover:bg-[#faf8f3] px-4 py-3 rounded-lg transition-all uppercase tracking-wider"
                   data-testid={`mobile-nav-${link.label.toLowerCase()}`}
                 >
@@ -142,7 +129,7 @@ export default function Navbar() {
                   className="flex items-center gap-2 text-[#8b6914] text-sm font-semibold"
                   data-testid="mobile-nav-phone"
                 >
-                  <Phone size={16} />
+                  <Phone size={16} aria-hidden />
                   <span>099027 27466</span>
                 </a>
                 <a

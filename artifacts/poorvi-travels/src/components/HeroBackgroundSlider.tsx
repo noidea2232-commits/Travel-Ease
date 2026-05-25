@@ -1,4 +1,6 @@
 import { useCallback, useEffect, useRef, useState } from "react";
+import BrandLogo from "@/components/brand/BrandLogo";
+import { HERO_LOGO_INTRO_MS } from "@/config/brand";
 import { HERO_SLIDES, HERO_SLIDE_INTERVAL_MS } from "@/config/heroSlides";
 
 const SWIPE_THRESHOLD_PX = 50;
@@ -23,9 +25,11 @@ export default function HeroBackgroundSlider() {
 
   useEffect(() => {
     if (slideCount <= 1) return;
-    const timer = setInterval(next, HERO_SLIDE_INTERVAL_MS);
-    return () => clearInterval(timer);
-  }, [next, slideCount]);
+    const slide = HERO_SLIDES[activeIndex];
+    const duration = slide?.isBrandLogo ? HERO_LOGO_INTRO_MS : HERO_SLIDE_INTERVAL_MS;
+    const timer = setTimeout(next, duration);
+    return () => clearTimeout(timer);
+  }, [activeIndex, next, slideCount]);
 
   useEffect(() => {
     const onScroll = () => {
@@ -85,18 +89,34 @@ export default function HeroBackgroundSlider() {
               className="absolute inset-[-8%]"
               style={{ transform: `translate(${parallax.x}px, ${parallax.y}px)` }}
             >
-              <div className={`hero-slide-zoom w-full h-full ${isActive ? "hero-slide-zoom-active" : ""}`}>
-                <img
-                  src={slide.src}
-                  alt={slide.alt}
-                  className="w-full h-full object-cover object-center min-h-full min-w-full"
-                  loading={index === 0 ? "eager" : "lazy"}
-                  decoding="async"
-                  fetchPriority={index === 0 ? "high" : "low"}
-                  draggable={false}
-                  sizes="100vw"
-                />
-              </div>
+              {slide.isBrandLogo ? (
+                <div className="hero-logo-splash w-full h-full min-h-full">
+                  <BrandLogo
+                    size="hero"
+                    context="dark"
+                    entrance
+                    interactive={false}
+                    priority
+                  />
+                </div>
+              ) : (
+                <div
+                  className={`hero-slide-zoom w-full h-full ${
+                    isActive ? "hero-slide-zoom-active" : ""
+                  }`}
+                >
+                  <img
+                    src={slide.src}
+                    alt={slide.alt}
+                    className="w-full h-full object-cover object-center min-h-full min-w-full"
+                    loading={index === 0 ? "eager" : "lazy"}
+                    decoding="async"
+                    fetchPriority={index === 0 ? "high" : "low"}
+                    draggable={false}
+                    sizes="100vw"
+                  />
+                </div>
+              )}
             </div>
           </div>
         );
